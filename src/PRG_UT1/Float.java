@@ -6,6 +6,13 @@ public class Float {
 		float unFloat=0.17f;
 		double unDouble =-0.175;
 		double otroDouble = 502E8;
+		
+		int i =5;
+		if(true) {
+			 i=10;
+			System.out.println(i);
+		}
+		System.out.println(i);
 		  
 		char a ='\b';
 		
