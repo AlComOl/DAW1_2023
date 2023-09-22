@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Ejercicio_1 {
 	//Muestra por pantalla la suma de tres números enteros, introducidos por teclado.
+	//prueba
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
 		int n1,n2,n3;
