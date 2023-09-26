@@ -18,7 +18,7 @@ public class par_mayor {
 			System.out.println("El par mas proximo a "+n+" es "+(n+1));
 		}
 			
-		
+		entrada.close();
 	}
 
 }
