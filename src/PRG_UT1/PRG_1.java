@@ -15,14 +15,17 @@ public class PRG_1 {
 			octal=aux*i+octal;
 			n=n/8;
 			i=i*10;
-		}
+		
 		
 		while(n>15) {
 			aux1=n%16;
+			System.out.println(n);
 			hexa=aux1*i+hexa;
 			
+			n=n/16;
+			i=i*10;
 			
-//			if(aux1==10) {
+//		if(aux1==10) {
 //				aux1='A';
 //			}if(aux1==11) {
 //				aux1='B';
@@ -35,11 +38,11 @@ public class PRG_1 {
 //			}if(aux1==15) {
 //				aux1='D';
 //			}
+//			
 			
 			
-			n=n/16;
-			i=i*10;
-			System.out.println(aux1);
+			
+		}
 		}
 		System.out.println("El resultado en octal " + (octal+(n*i)));
 		System.out.println("El resultado en hexadecimal " + (hexa+(n*i)));
