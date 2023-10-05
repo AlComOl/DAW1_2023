@@ -1,4 +1,4 @@
-package PRG_UT1;
+package src;
 
 public class Float {
 
@@ -14,7 +14,7 @@ public class Float {
 		}
 		System.out.println(i);
 		  
-		char a ='\b';
+		char a ='b';
 		
 		System.out.println(a + "g");
 		
