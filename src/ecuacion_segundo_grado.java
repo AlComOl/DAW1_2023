@@ -1,4 +1,4 @@
-package PRG_UT1;
+package src;
 
 import java.util.*;
 public class ecuacion_segundo_grado {
