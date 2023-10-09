@@ -17,11 +17,10 @@ public class PRG_25 {
 
 	public static void main(String[] args) {
 			Scanner entrada= new Scanner(System.in);
-			int par=0 ,numero=0,parmayor,imparmenor;
+			int par=0 , impar=0,numero=0,parmayor,imparmenor;
 			for(int i=0;i<10;i++) {
 				System.out.println("Introduce 10 numeros");
 				int n= entrada.nextInt();
-				int impar=n;
 					if(n%2==0&&n>=numero) {
 						par=n;
 						System.out.println(par);
