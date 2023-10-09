@@ -17,7 +17,6 @@ public class PRG_29 {
 
 	public static void main(String[] args) {
 		double sumaTemp = 0,temp,m,cont=0;//sumaDiaBajo0=0
-		
 		Scanner entrada=new Scanner(System.in);
 		//primer bucle para repetir los dias
 		for(int i=1;i<11;i++) {
@@ -39,7 +38,7 @@ public class PRG_29 {
 		// también con un ternario 
 			//double ternario=(m<0)?cont+=1:(cont);
 			
-		   // sumaDiaBajo0=ternario;
+		   // sumaDiaBajo0=ternario;//pondriamo ternario en vez de cont en SOP
 		
 				}
 		System.out.println("Hay "+cont+" dias  donde la media ha sido inferior a 0 Grados Centigrados");
