@@ -22,16 +22,20 @@ public class PRG_25 {
 				System.out.println("Introduce 10 numeros");
 				int n= entrada.nextInt();
 					if(n%2==0&&n>=par) {
+						
 						par=n;
 						System.out.println(par);
-						impar=par;
-					}else if(n%2!=0&&n<impar){
-						impar=n;
+			
+					}else if(n<impar||impar==0){
+				
+							impar=n;
+					
 						System.out.println(impar);
 				}
 			}
 			
-			System.out.println(par+","+impar);
+			System.out.println("El numero par mayor de los introducidos es "+par);
+			System.out.println("El numero impar es "+impar);
 	}
 	
 
