@@ -17,21 +17,22 @@ public class PRG_25 {
 
 	public static void main(String[] args) {
 			Scanner entrada= new Scanner(System.in);
-			int par=0 , impar=0,numero=0,parmayor,imparmenor;
+			int par=0 , impar=0;
 			for(int i=0;i<10;i++) {
 				System.out.println("Introduce 10 numeros");
 				int n= entrada.nextInt();
-					if(n%2==0&&n>=numero) {
+					if(n%2==0&&n>=par) {
 						par=n;
 						System.out.println(par);
-					}else if(n%2!=0&&n<=numero){
+						impar=par;
+					}else if(n%2!=0&&n<impar){
 						impar=n;
 						System.out.println(impar);
 				}
 			}
-			parmayor=par+2;
-			imparmenor=impar-1;
+			
 			System.out.println(par+","+impar);
 	}
+	
 
 }
