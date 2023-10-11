@@ -26,7 +26,8 @@ public class PRG_25 {
 						par=n;
 						System.out.println(par);
 			
-					}else if(n<impar||impar==0){
+					}
+					else if(n<impar||impar==0){
 				
 							impar=n;
 					
