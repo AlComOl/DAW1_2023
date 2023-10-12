@@ -18,30 +18,32 @@ public class PRG_53 {
 
 	public static void main(String[] args) {
 			Scanner entrada= new Scanner(System.in);
-			int res=1,i=1;
+			
 			System.out.println("Introduce dos numeros enteros positivos");
 			int n=entrada.nextInt();
 			System.out.println("Introduce otro numero entero positivo");
 			int m=entrada.nextInt();
 			
-			if(n>0&&m>0) {
-				while(res<m) {
-					res=n*i;
-					i++;
-					System.out.println(res);
-					int nI=0;
-					int digito=res%10;
-					nI=nI*10+digito;
-					if(nI==n) {
-						System.out.println(nI);
-					}
-				}
+			if(n <=0 || m<=0) {
+				System.out.println("Los numeros deben ser enteros y positivos");
 				
-			}else {
-				System.out.println("Error introducuiendo datos (introduce enteros positivos)");
 			}
-			
-			
-			
+			for (int i = n; i < m; i++) {
+	            if (i % n == 0) {  // Verificar si i es un múltiplo de N
+	                int numeroOriginal = i;
+	                int numeroInvertido = 0;
+
+	                int temp = i;
+	                while (temp > 0) {
+	                    int digito = temp % 10;
+	                    numeroInvertido = numeroInvertido * 10 + digito;
+	                    temp /= 10;
+	                }
+
+	                if (numeroOriginal == numeroInvertido) {
+	                    System.out.println(i + " es un múltiplo de " + n + " y es capicúa.");
+	                }
+	            }
+	        }
+	    }
 	}
-}
