@@ -27,9 +27,9 @@ public class PRG_53 {
 			if(n <=0 || m<=0) {
 				System.out.println("Los numeros deben ser enteros y positivos");
 				
-			}
+			}//encontrar multiplos de n
 			for (int i = n; i < m; i++) {
-	            if (i % n == 0) {  // Verificar si i es un múltiplo de N
+	            if (i % n == 0) {  // Verificar si i es un múltiplo de n
 	                int numeroOriginal = i;
 	                int numeroInvertido = 0;
 
@@ -41,7 +41,7 @@ public class PRG_53 {
 	                }
 
 	                if (numeroOriginal == numeroInvertido) {
-	                    System.out.println(i + " es un múltiplo de " + n + " y es capicúa.");
+	                    System.out.println(i + " es un multiplo de " + n + " y es capicua.");
 	                }
 	            }
 	        }
