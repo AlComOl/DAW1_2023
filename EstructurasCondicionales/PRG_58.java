@@ -21,33 +21,37 @@ import java.util.*;
 	public class PRG_58 {
 	    public static void main(String[] args) {
 	        Scanner entrada = new Scanner(System.in);
-	       int   porApro=0,porApro1, porSu=0,porSu1 ,aprovados=0;
-	   	   double n=0,aux=0,media=0,suspendidos=0,contPers=-1;
+	       int   porApro1, porSu1 ,aprovados=0,suspendidos=0;
+	   	   double n,aux=0,media,contPers=0;
 	       do {
 	    	   System.out.println("Introduce notas");
 	    	   n=entrada.nextDouble();
-	    	   contPers++;
-	    	   if(n>=0&&n<=10) {
+	    	   
+	    	   if(n>=0&&n<=10) {//Si esta entre estos valores suma el valor
+	    		 //  No sumara a aux numeros nemores de 0  
 	    		  aux+=n; 
 	    	   }
-	    	   if(n>=5) {
+	    	   if(n>=5) {//Si es mayor lo suma contador de aprovados y contPers
 	    		   aprovados++;
-	    		  
-	    	   }if(n<5){
+	    		   contPers++;
+	    	   }if(n<5&&n>=0){// Si es menor cuenta suspensos y contPers
 	    		   suspendidos++;
-	    		
+	    		   contPers++;
 	    	   }
-	    	   System.out.println(aux);
+	    
 	    	
-	       }while(n != -1);
+	       }while(n != -1);//Cunado se cumple condicion sale 
+	      
 	       		media=aux/contPers;
-	       		System.out.println(media);
+	      
+	      //Opera con valores para mostrar la salia 		
 	       		porApro1=(int) (aprovados*100/contPers);
-	       		porSu1=(int) (porSu*10/(contPers));
+	       		porSu1=(int) (suspendidos*100/contPers);
 	       		System.out.println("La media de las notas es :"+ media);
-	       		System.out.println("Hay "+ porApro+"examenes  aprovados que corresponde a un "+porApro1);
-	       		System.out.println("Hay "+ porSu+"examenes  aprovados que corresponde a un "+porSu1);
+	       		System.out.println("Hay "+ aprovados+" aprovados en los examenes y la media de  aprovados corresponde a un "+porApro1+"%");
+	       		System.out.println("Hay "+ suspendidos+" suspendidos en los examenes y la media de suspendidos corresponde a un "+porSu1+"%");
 	    	   
+	       		entrada.close();
 	       }
 	      
 	    }
