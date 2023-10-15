@@ -3,7 +3,7 @@ package EstructurasCondicionales;
 
 Autor: Álvaro Comenge
 
-Fecha:14/10/23A
+Fecha:15/10/23A
 
 Descripción:
 
@@ -28,7 +28,7 @@ public class PRG_54 {
 		 a= entrada.nextInt();
 		
 		
-		 //hacemos un bucle que itere mientras i se menor del mes introducido sumara los meses de cada mes 
+		 //hacemos un bucle que itere mientras i sea menor del mes introducido sumara los dias de cada mes en norden
 		for(int i = 1; i<m;i++) { 
 		
 			switch (i) {
@@ -79,9 +79,9 @@ public class PRG_54 {
 					break;
 			}
 		}
-			norden+=d;
+			norden+=d;//acumularemos a la salida del bucle los dias de los meses anteriores mas el d(dia del mes que empezamos a contar)
 			System.out.println("El numero de orden de la fecha es: "+norden);
 		
-		
+		entrada.close();
 }
 }
