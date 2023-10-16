@@ -1,4 +1,4 @@
-package PRG_UT1;
+package src;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ public class PRG_1 {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		int n,res, aux,octal=0,i=1;
-		int hexa=0, aux1=0;
+		int hexa=0, aux1;
 		System.out.println("Introcuce numero");
 		n=entrada.nextInt();
 		
@@ -15,17 +15,34 @@ public class PRG_1 {
 			octal=aux*i+octal;
 			n=n/8;
 			i=i*10;
+		}
 		
-		
-		while(n>15) {
-			aux1=n%16;
-			System.out.println(n);
-			hexa=aux1*i+hexa;
+//		while(n>15) {
+//		switch (aux1) {
+//		case 10:
+//			hexa=="A"+hexa;
+//			break;
+//		case 10:
+//			hexa=="B"+hexa;
+//			break;
+//		case 10:
+//			hexa=="C"+hexa;
+//		case 13:
+//			hexa=="D"+hexa;
+//		case 14:
+//			hexa=="E"+hexa;
+//			break;
+//		case 15:
+//			hexa="F"+hexa;
+//			break;
+//		default:
+//			break;
+//		}
+//			aux1=n%16;
+//			hexa=aux1*i+hexa;
 			
-			n=n/16;
-			i=i*10;
 			
-//		if(aux1==10) {
+//			if(aux1==10) {
 //				aux1='A';
 //			}if(aux1==11) {
 //				aux1='B';
@@ -38,14 +55,14 @@ public class PRG_1 {
 //			}if(aux1==15) {
 //				aux1='D';
 //			}
-//			
 			
 			
-			
-		}
-		}
+//			n=n/16;
+//			i=i*10;
+//			System.out.println(aux1);
+//}
 		System.out.println("El resultado en octal " + (octal+(n*i)));
-		System.out.println("El resultado en hexadecimal " + (hexa+(n*i)));
+//		System.out.println("El resultado en hexadecimal " + (hexa+(n*i)));
 	}
 
 }
