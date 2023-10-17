@@ -16,7 +16,7 @@ public class PRG_28 {
 
 	public static void main(String[] args) {
 		 Scanner entrada = new Scanner(System.in);
-		 
+	//el valor de centinela no se puede utilizar en el bucle	 
 		 int centinela=-1,contador=0;
 		 float media, suma=0,nota;
 		 
