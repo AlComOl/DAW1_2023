@@ -20,7 +20,10 @@ public class PRG_47 {
 			do {
 				System.out.println("Introduce un numero entero y positivo");
 					n=entrada.nextInt();
-					while(n<0);
+					while(n<0){
+						System.out.println("Introduce valor correcto");
+						n=entrada.nextInt(); //for(n=entrada.nextInt();n<0; )
+					}
 //						if(n<0) {
 //							
 //						}else {
