@@ -34,7 +34,7 @@ public class PRG_52 {
 					sMayor=s;
 					nMayor=n;
 					
-				}else if(s<sMenor) {
+				}else if(s<sMayor&&s<sMenor) {
 					sMenor=s;
 					nMenor=n;
 					
@@ -43,9 +43,9 @@ public class PRG_52 {
 				
 			
        	}
-		System.out.println("El sueldo mayor es de "+sMayor+"y lo cobra "+ nMayor);
+		System.out.println("El sueldo mayor es de "+sMayor+ " lo cobra "+ nMayor);
 
-		System.out.println("El sueldo menor es de "+sMenor+"y lo cobra "+ nMenor);
+		System.out.println("El sueldo menor es de "+sMenor+ " lo cobra "+ nMenor);
 		
 	}
 
