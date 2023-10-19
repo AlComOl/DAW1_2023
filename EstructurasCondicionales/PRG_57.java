@@ -3,7 +3,7 @@ package EstructurasCondicionales;
 //
 //Autor: Álvaro Comenge
 //
-//Fecha:18/10/23A
+//Fecha:19/10/23A
 //
 //Descripción:
 //
@@ -17,7 +17,7 @@ public class PRG_57 {
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
 		
-		int n1,n2,res1,res2,mcd = 0,aux=0,temp;
+		int n1,n2,res1,res2,mcd=0,aux,temp;
 		
 		 System.out.println("Introduce el numero");
 			n1=entrada.nextInt();
@@ -42,15 +42,9 @@ public class PRG_57 {
 		 					}
 		 					
 		 			System.out.println("Minimo comun multiplo "+res1*res2/mcd);
-//		 						}
-			 			
-			 			
-			 			
-			 			
-			 		}
-		 				
-		 							
-		 				}
+			 	entrada.close();
+			 }
+		 }
 					 
 
 		 		
