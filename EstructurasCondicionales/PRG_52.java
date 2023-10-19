@@ -21,7 +21,7 @@ public class PRG_52 {
 
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
-		int s,sMayor=0,sMenor=0;
+		int s=0,sMayor=0,sMenor=0;
 		String n, nMayor="",nMenor="";
 		
 		for(int i=1;i<5;i++){
@@ -29,21 +29,24 @@ public class PRG_52 {
 			n=entrada.next();
 			System.out.println("Introduce sueldo");
 			s=entrada.nextInt();
-		
+			sMenor=sMayor;
 				if(s>sMayor) {
 					sMayor=s;
 					nMayor=n;
+					
 				}else if(s<sMenor) {
 					sMenor=s;
 					nMenor=n;
+					
+					s=0;
 			}
 				
 			
        	}
-		System.out.println(sMayor);
-		System.out.println(nMayor);
-		System.out.println(sMenor);
-		System.out.println(nMenor);
+		System.out.println("El sueldo mayor es de "+sMayor+"y lo cobra "+ nMayor);
+
+		System.out.println("El sueldo menor es de "+sMenor+"y lo cobra "+ nMenor);
+		
 	}
 
 }
