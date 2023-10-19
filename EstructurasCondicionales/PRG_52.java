@@ -29,16 +29,25 @@ public class PRG_52 {
 			n=entrada.next();
 			System.out.println("Introduce sueldo");
 			s=entrada.nextInt();
-			sMenor=sMayor;
+			
 				if(s>sMayor) {
 					sMayor=s;
 					nMayor=n;
+					System.out.println("mayor"+sMayor);
+				}else if(sMenor==0) {
+						sMenor=s;
+					System.out.println("menor"+sMenor);
+					if(s<=sMenor) {
+						sMenor=s;
+						System.out.println("menor"+sMenor);
+					}else if(s<sMenor){
+						sMenor=s;
+						System.out.println("menor"+sMenor);
+						
+					}
 					
-				}else if(s<sMayor&&s<sMenor) {
-					sMenor=s;
-					nMenor=n;
 					
-					s=0;
+					
 			}
 				
 			
