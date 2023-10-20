@@ -23,27 +23,25 @@ public class PRG_13 {
 	public static void main (String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		double g_variable=0;
-		final double IVA= 21;
+		final double IVA= 21,MENOS100=0.7,HASTA250=0.6,MAS250=0.4;
 		
 		//ENTRADA
 		System.out.println("Introcuce la lectura anterior");
-		double lectura_anterior=entrada.nextDouble();
+		int lectura_anterior=entrada.nextInt();
 		System.out.println("Introduce lectura actual");
-		double lectura_actual=entrada.nextDouble();
-		System.out.println("Introduce el numero de llamadas");
-		double n_llamadas= entrada.nextDouble();
-		
+		int lectura_actual=entrada.nextInt();
+		System.out.println("Introduce el numero de llamadas");		int n_llamadas= entrada.nextInt();	
 		
 		//CALCULA PASOS GASTOS FIJOS Y VARIABLES
-		double pasos=lectura_actual-lectura_anterior;
+		int pasos=lectura_actual-lectura_anterior;
 		double g_fijos=n_llamadas*4;
 		
 		if(pasos<=100) {
 			 g_variable=(pasos*0.07);
-		}else if(pasos>100&&pasos<=250){
-			 g_variable=(pasos*0.07);
+		}else if(pasos<=250){
+			 g_variable=100*0.07+(pasos-100)*HASTA250;
 		}else if(pasos>250) {
-			 g_variable=100*0.07+150*0.06+(pasos-250)*0.04;
+			 g_variable=100*0.07+150*0.06+(pasos-250)*MAS250;
 		}
 		
 		
@@ -52,14 +50,17 @@ public class PRG_13 {
 		double g_totales_SinIVA=(g_variable+g_fijos);
 		//CALCULA EL IVA
 		double p_IVA=(g_totales_SinIVA*IVA/100);
-		double g_totales=g_totales_SinIVA+p_IVA;
+		double g_totales=(g_totales_SinIVA+p_IVA);
+		
 		
 		
 	//SALIDA	
-		System.out.println("El importe de los gastos fijos "+ g_fijos);
-		System.out.println("El importe de los gastos variables "+ g_variable);
-		System.out.println("El importe del IVA del total de la factura es :"+p_IVA);
-		System.out.println("El importe total de la factura + IVA es :"+ g_totales);
+		System.out.println(        "\t CONCEPTO                       \t     VALOR Euros "   );
+		System.out.println("     ");
+		System.out.println("El importe de los gastos fijos               \t "+g_fijos+"euros");
+		System.out.println("El importe de los gastos variables           \t "+ g_variable+"euros");
+		System.out.println("El importe del IVA del total de la factura es\t "+p_IVA+"euros");
+		System.out.println("El importe total de la factura + IVA es      \t "+ g_totales+"euros");
 	
 		entrada.close();
 	}
