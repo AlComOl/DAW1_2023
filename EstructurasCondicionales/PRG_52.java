@@ -24,7 +24,7 @@ public class PRG_52 {
 		int s=0,sMayor=0,sMenor=0;
 		String n, nMayor="",nMenor="";
 		
-		for(int i=1;i<5;i++){
+		for(int i=1;i<10;i++){
 			System.out.println("Introduce nombre");
 			n=entrada.next();
 			System.out.println("Introduce sueldo");
@@ -34,21 +34,15 @@ public class PRG_52 {
 					sMayor=s;
 					nMayor=n;
 					System.out.println("mayor"+sMayor);
-				}else if(sMenor==0) {
-						sMenor=s;
+				}else if(s<sMenor) {
+					sMenor=s;
+					nMenor=n;
 					System.out.println("menor"+sMenor);
-					if(s<=sMenor) {
-						sMenor=s;
-						System.out.println("menor"+sMenor);
-					}else if(s<sMenor){
-						sMenor=s;
-						System.out.println("menor"+sMenor);
-						
-					}
-					
-					
-					
-			}
+				}else if(sMenor==0&&s>sMenor) {
+					sMenor=s;
+					nMayor=n;
+					System.out.println("menor-2  "+sMenor);
+				}
 				
 			
        	}
