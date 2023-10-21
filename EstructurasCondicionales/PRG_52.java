@@ -25,9 +25,7 @@ public class PRG_52 {
 		String n, nMayor="",nMenor="";
 		
 		
-	//Moraleja haz las cosas faciles no te compliques
-	//con la primera condicion añadimos los valores a las variable
-	//despues solo añadimos la mayor y la menor
+	
 		for(int i=1;i<10;i++){
 			System.out.println("Introduce nombre");
 			n=entrada.next();
