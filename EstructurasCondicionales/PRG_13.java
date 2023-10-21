@@ -57,10 +57,10 @@ public class PRG_13 {
 	//SALIDA	
 		System.out.println(        "\t CONCEPTO                       \t     VALOR Euros "   );
 		System.out.println("     ");
-		System.out.println("El importe de los gastos fijos               \t "+g_fijos+"euros");
-		System.out.println("El importe de los gastos variables           \t "+ g_variable+"euros");
-		System.out.println("El importe del IVA del total de la factura es\t "+p_IVA+"euros");
-		System.out.println("El importe total de la factura + IVA es      \t "+ g_totales+"euros");
+		System.out.println("El importe de los gastos fijos               \t "+g_fijos+" euros");
+		System.out.println("El importe de los gastos variables           \t "+ g_variable+" euros");
+		System.out.println("El importe del IVA del total de la factura es\t "+p_IVA+" euros");
+		System.out.println("El importe total de la factura + IVA es      \t "+ g_totales+" euros");
 	
 		entrada.close();
 	}
