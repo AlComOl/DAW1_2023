@@ -21,7 +21,7 @@ public class PRG8_1 {
 		
 		System.out.println("Introduce un numero");
 		int n=entrada.nextInt();
-		
+		entrada.close();
 		if(n==0) {
 			System.out.println("nulo");
 		}else if(n>0){
