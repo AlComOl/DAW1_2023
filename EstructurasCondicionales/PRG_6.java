@@ -41,14 +41,14 @@ public class PRG_6 {
 			 }else if(m>59) {
 				 m=00;
 			 }
-		//	 
+		//	Como la condicion no se cumplira nunca el bucle solo se ejecutará una vez 
 		}while(h==(h-1));
-		
+		//Si cumple uno de estas condiciones mostrara que el valor es erroneo
 			if(h<-1||h>24||m<0||m>59||s<0||s>59) {
 		
 				System.out.println("Has introducidos datos erroneos");
 			}else {
-				
+			//Sino mostrará un segundo más de la hora idfntroducida	
 			System.out.println("dentro de un segundo seran las "+h+":"+m+":"+s);
 		}
 		
