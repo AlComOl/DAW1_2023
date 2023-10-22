@@ -2,7 +2,7 @@ package EstructurasCondicionales;
 ///*****************************************************************
 
 //Autor: Alvaro 
-//Fecha:06/10/23
+//Fecha:22/10/23
 //Descripción: Algoritmo que recibe como datos de entrada una hora expresada en horas,
 //minutos y segundos que nos calcula y escribe la hora, minutos y segundos que serán, transcurrido un segundo.
 //******************************************************************/
@@ -26,9 +26,9 @@ public static void main(String[] args) {
 			System.out.println( "La hora no es correcta");
 		}else{
 			   segundos +=1;
-			if(segundos == 60 ) { 
+			if(segundos == 59 ) { 
 					minutos +=1;
-				if(minutos == 60) {
+				if(minutos == 59) {
 					hora +=1;
 					if(hora == 24) {
 						System.out.println("Son las 00:00:00");

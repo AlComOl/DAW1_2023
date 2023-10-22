@@ -23,16 +23,17 @@ import java.util.*;
 	        System.out.println("Introduce un número entero positivo:");
 	        int n = entrada.nextInt();
 	        entrada.close();
-	        if (n < 1) {//descarta valores negativos
-	            System.out.println("El número debe ser positivo.");
+	        if (n <= 1) {//descarta valores negativos
+	            System.out.println("El número debe ser positivo o mayor de 1");
 	        } else {
 	            int cn = n;  // Hacemos una copia de n para no modificar el original
-
 	            for (int i = 2; cn > 1; i++) {//itera dentro de los diferentes numeros empezando por 2
 	                while (cn % i == 0) {//verifica si i es factor primo
-	                    System.out.println(i);
 	                    cn /= i;
+	                    System.out.println(i+" es factor primo de "+n);
+	                   
 	                }
+	              
 	            }
 	        }
 	    }
