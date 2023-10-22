@@ -26,11 +26,13 @@ import java.util.*;
 	        if (n <= 1) {//descarta valores negativos
 	            System.out.println("El número debe ser positivo o mayor de 1");
 	        } else {
-	            int cn = n;  // Hacemos una copia de n para no modificar el original
-	            for (int i = 2; cn > 1; i++) {//itera dentro de los diferentes numeros empezando por 2
+	            int cn = n;  // Hacemos una copia de n para no modificar el original y poder trabajar con n ,la salida no es la que queria
+	               for (int i = 2; cn > 1; i++) {//itera dentro de los diferentes numeros empezando por 2 while(cn!=1)**
 	                while (cn % i == 0) {//verifica si i es factor primo
+	                	 System.out.println(i+" es factor primo de "+n);
+		                   
 	                    cn /= i;
-	                    System.out.println(i+" es factor primo de "+n);
+	                 //   System.out.println(i+" es factor primo de "+n);
 	                   
 	                }
 	              

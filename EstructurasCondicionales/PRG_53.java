@@ -8,7 +8,7 @@ Fecha:9/10/23
 Descripción:
 
 	Programa que recibe como datos de entrada dos números enteros positivos N y M, 
-	y calcula e imprime los múltiplos de N, inferiores a M, sean capicúas.
+	y calcula e imprime los múltiplos de N, inferiores a M, khv.
 
 
 ***************************************************************************************/
@@ -27,25 +27,26 @@ public class PRG_53 {
 		if(n <=0 || m<=0) {
 			System.out.println("Los numeros deben ser enteros y positivos");
 			
-		}//encontrar multiplos de n
-		for (int i = n; i < m; i++) {
-                if (i % n == 0) {  // Verificar si i es un múltiplo de n
+		}else{//encontrar multiplos de n
+			for (int i = 2; i < m; i++) {
+                if (n % i == 0) {  // Verificar si i es un múltiplo de n
                 int numeroOriginal = i;
                 int numeroInvertido = 0;
                 int temp = i;
-                while (temp > 0) {
-                    int digito = temp % 10;
-                    numeroInvertido = numeroInvertido * 10 + digito;
-                    temp /= 10;
-                }
-
-                if (numeroOriginal == numeroInvertido) {
-                    System.out.println(i + " es un multiplo de " + n + " y es capicúa.");
+                if(temp<10) {
+                	System.out.println("Capicua"+temp);
                 }else {
-                	wrv
+	                while (temp > 0) {
+	                    int digito = temp % 10;
+	                    numeroInvertido = numeroInvertido * 10 + digito;
+	                    temp /= 10;
+	                }
+                }
+                if (numeroOriginal == numeroInvertido) {
+                    System.out.println(i + " es un multiplo de " + n + " y es capicua.");
                 }
             }
         }
     }
 }
-	
+}	
