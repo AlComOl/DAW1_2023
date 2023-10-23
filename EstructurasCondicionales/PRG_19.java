@@ -18,21 +18,22 @@ public class PRG_19 {
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
 		int res=0;
-		int a;
+		int a,aux;
 		System.out.println("Introcuce numeros a multiplicar");
 		int n=entrada.nextInt();
 		int n1=entrada.nextInt();
-		
-		/*for(int i=0;i<n1;i++) {
+		//hay que poner el mayor delante para optimizar
+//		if(n>n1) {
+//			aux=n1;
+//			n=n1;
+//			n1=aux;
+//		}
+			for(int i=0;i<n1;i++) {
 			res+=n;
 			System.out.println(res);
-		}*/
+			}
 		
-		while(n1>0) { //(n1>0)n*n1 != res
-			res+=n;
-			n1--;
-			
-		}
+	
 			
 		System.out.println(res);
 		
