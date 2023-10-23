@@ -22,24 +22,21 @@ public static void main(String[] args) {
 		System.out.println("Introduce los segundos");
 			segundos = tec.nextInt();	
 		
-		if(hora > 23 || minutos > 59 || segundos > 59  || hora < 0 || minutos < 0 || segundos < 0) {
+		if(hora > 23 || minutos >= 60 || segundos >= 60  || hora < 0 || minutos < 0 || segundos < 0) {
 			System.out.println( "La hora no es correcta");
 		}else{
-			   segundos +=1;
-			if(segundos == 59 ) { 
-					minutos +=1;
+			   
+			if(segundos == 59 ) {
+					segundos=00;
+					minutos =0;
 				if(minutos == 59) {
+					minutos=00;
 					hora +=1;
-					if(hora == 24) {
-						System.out.println("Son las 00:00:00");
-					}else{ 
-						
+					if(hora == 23) {
+						hora=00;
+					
 					}
-				}else{
-							
-				}    
-			}else {
-							     
+				}	
 			}		 
 		System.out.println("Dentro de un segundo seran las "+hora+":"+minutos+":"+segundos);	
 		}	

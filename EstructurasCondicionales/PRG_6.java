@@ -20,7 +20,7 @@ public class PRG_6 {
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
 			int h,m,s;
-		do {
+//		do {
 			System.out.println("Introduce horas");
 			 h=entrada.nextInt();
 			System.out.println("Introduce minutos");
@@ -41,8 +41,8 @@ public class PRG_6 {
 			 }else if(m>59) {
 				 m=00;
 			 }
-		//	Como la condicion no se cumplira nunca el bucle solo se ejecutará una vez 
-		}while(h==(h-1));
+//			Como la condicion no se cumplira nunca el bucle solo se ejecutará una vez 
+//		}while(h==(h-1));
 		//Si cumple uno de estas condiciones mostrara que el valor es erroneo
 			if(h<-1||h>24||m<0||m>59||s<0||s>59) {
 		
@@ -53,5 +53,4 @@ public class PRG_6 {
 		}
 		
 	}
-
 }

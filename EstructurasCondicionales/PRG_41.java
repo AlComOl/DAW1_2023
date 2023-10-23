@@ -29,7 +29,7 @@ public class PRG_41 {
 		for(int temp=1;temp<=n;temp++) {///Iteramos temp que es el dividendo hasta el numero introducido N
 
 			if(aux==2) {//Si el contador viene con valor 2 el numero será primo,temp es -1 porque al pasar por el bucle de nuevo temp sera ++
-				System.out.println((temp-1) +" es primo");
+				System.out.println((temp) +" es primo");
 			}
 			aux=0;//ponemos aux a cero para que inicie el conteo
 		
