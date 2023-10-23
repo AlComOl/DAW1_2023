@@ -22,12 +22,12 @@ public class PRG_19 {
 		System.out.println("Introcuce numeros a multiplicar");
 		int n=entrada.nextInt();
 		int n1=entrada.nextInt();
-		//hay que poner el mayor delante para optimizar
-//		if(n>n1) {
-//			aux=n1;
-//			n=n1;
-//			n1=aux;
-//		}
+		//hay que poner el mayor delante para optimizar esta para repasar 
+		if(n>n1) {
+			aux=n;
+			n=n1;
+			n1=aux;
+		}
 			for(int i=0;i<n1;i++) {
 			res+=n;
 			System.out.println(res);
