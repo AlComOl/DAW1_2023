@@ -34,10 +34,10 @@ public class PRG_52 {
 					sMayor=s;
 					nMayor=n;
 					System.out.println("mayor"+sMayor);
-				}else if(sMenor==0) {
+				}else if(s<=sMenor) {
 						sMenor=s;
 					System.out.println("menor"+sMenor);
-					if(s<=sMenor) {
+					if(sMenor==0) {
 						sMenor=s;
 						System.out.println("menor"+sMenor);
 					}else if(s<sMenor){
