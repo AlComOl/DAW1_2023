@@ -17,39 +17,26 @@ public class PRG_41 {
 
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
-		int res,aux=0;
+		int n;
+		boolean primo=true;
 		
 		 
 		System.out.println("Introduce un numero");
-		int n= entrada.nextInt();
-		
-		if(n<=0) {
-			System.out.println("Los numeros negativos no consideran primos");
-		}else {
-		for(int temp=1;temp<=n;temp++) {///Iteramos temp que es el dividendo hasta el numero introducido N
+		n= entrada.nextInt();
+		System.out.println("primos de "+ n);
+		for(int i=n;i>0;i--) {
+			primo=true;
+			
+			for(int j=2;i>j&&primo==true;j++) {
+				
+				if(i%j==0) 
+					primo=false;
+			}
+			if(primo)
 
-			if(aux==2) {//Si el contador viene con valor 2 el numero será primo,temp es -1 porque al pasar por el bucle de nuevo temp sera ++
-				System.out.println((temp) +" es primo");
-			}
-			aux=0;//ponemos aux a cero para que inicie el conteo
-		
-			for(int i=1;temp>=i;i++) {//itera para hallar los numeros primos si hay 2 numeros con resto 0 aux++ 
-				res=temp%i;
-				if(res==0) {
-					aux++;
-					
-				}
-			}
-				
-					
-				
-		}
-				
-				}
+				System.out.println(i);
 			
 			}
 		}
-
-	
-
+	}
 

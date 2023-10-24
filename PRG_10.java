@@ -11,19 +11,18 @@ Descripción:
 
 *****************************************************************************************************************/
 import java.util.*;
-public class probar {
+public class PRG_10 {
 
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
-		int n=0, aux=0;
-		for(int i=0;i<10;i++) {
+		int n;
+		for(int i=1;i<10;i++) {
 			System.out.println("Introduce un numero");
 			
 			n=entrada.nextInt();
-			aux+=n;
-			
+			n=+n;
 		}
-		System.err.println(aux);
+		System.out.println(n);
 	}
 
 }
