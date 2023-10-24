@@ -19,7 +19,7 @@ public class PRG_20 {
 
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
-		double aux=1;
+		double aux=1;//es un productorio
 		
 		System.out.println("Introduce base");
 		int b=entrada.nextInt();

@@ -1,29 +1,37 @@
 package EstructurasCondicionales;
-/*******************************************************************************************************************
 
-Autor: Álvaro Comenge
+/****************************************************************************
 
-Fecha:14/10/23
+	Autor: Álvaro Comenge
 
-Descripción:
+	Fecha:7/10/23
 
-	Acepta 10 números enteros y muestra su suma.
 
-*****************************************************************************************************************/
+	Descripción:
+
+	Calcula la potencia de 2 números aceptados por teclado mediante productos
+	
+	
+*******************************************************************************/
+
 import java.util.*;
 public class probar {
 
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
-		int n=0, aux=0;
-		for(int i=0;i<10;i++) {
-			System.out.println("Introduce un numero");
-			
-			n=entrada.nextInt();
-			aux+=n;
-			
+		double aux=1;//empezamos por el 1 porque es un productorio.
+		
+		System.out.println("Introduce base");
+		int b=entrada.nextInt();
+		System.out.println("Introduce exponente");
+		int e=entrada.nextInt();
+		
+		for(int i=0;i<e;i++) {
+			aux=aux*b;
 		}
-		System.err.println(aux);
+		System.out.println(aux);
+		
+		entrada.close();
 	}
 
 }

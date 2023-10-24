@@ -1,23 +1,35 @@
 package EstructurasCondicionales;
 
+/****************************************************************************
+
+	Autor: Álvaro Comenge
+
+	Fecha:24/10/23
+
+
+	Descripción:
+
+	Calcula el cociente de 2 números enteros aceptados por teclado mediante restas sucesivas
+	
+*******************************************************************************/
 import java.util.*;
 
 public class PRG_21 {
 
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
-		int cociente=0;
+		int dividendo,divisor,cociente;
 		System.out.println("Introduce el el dividendo");	
-	    int	dividendo=entrada.nextInt();
+	    dividendo=entrada.nextInt();
 	    System.out.println("Introduce el el divisor");	
-	    int	divisor=entrada.nextInt();
+	    divisor=entrada.nextInt();
 
-            while(dividendo>divisor) {
+            for(cociente=0;divisor<=dividendo;cociente++) {
 	    	dividendo-=divisor;
 	    	
-	    	cociente++;
+	    	
 	    }
-	    System.out.println(cociente);
+            System.out.println(cociente);
             entrada.close();
                   }
       }

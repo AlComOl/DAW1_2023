@@ -66,6 +66,6 @@ public class PRG_12 {
 			System.out.println(" Fecha Incorrecta");
 		}
 		}
-	  }
+	  }//corchete del ELSE
 	}
 }

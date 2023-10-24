@@ -20,7 +20,7 @@ public class PRG_4 {
 		System.out.println("Introduce la nota");
 		float n = entrada.nextFloat();
 
-		if(n==0&&n<=3) {
+		if(n<=3) {
 			System.out.println("Muy deficiente(MD)");
 		}else if(n>=3&&n<=4.99) {
 			System.out.println("Insuficiente(I)");
@@ -33,7 +33,7 @@ public class PRG_4 {
 		}else if(n>=9&&n<=10) {
 			System.out.println("Sobresaliente(SS)");
 		}else if(n==10) {
-			System.out.println("Eres un crack(SS)");
+			System.out.println("Matricula de honor(MD)");
 		}
 		entrada.close();
 		}
