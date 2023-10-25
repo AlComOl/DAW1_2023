@@ -4,7 +4,7 @@ package EstructurasCondicionales;
 
 	Autor: Álvaro Comenge
 
-	Fecha:7/10/23
+	Fecha:25/10/23
 
 
 	Descripción:
