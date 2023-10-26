@@ -17,12 +17,13 @@ public class PRG_29 {
 
 	public static void main(String[] args) {
 		double sumaTemp = 0,temp,m,cont=0;//sumaDiaBajo0=0
+		final int DIAS=10, TEMPDIA=5;
 		Scanner entrada=new Scanner(System.in);
 		//primer bucle para repetir los dias
-		for(int i=1;i<11;i++) {
+		for(int i=1;i<DIAS;i++) {
 		System.out.println("Introduce cinco temperaturas tomadas durante el dia "+ i);
 		//Un bucle anidado que repite las 5 temp diarias
-			for(int j=0;j<5;j++) {
+			for(int j=0;j<TEMPDIA;j++) {
 		temp=entrada.nextDouble();
 		//va sumado y guardando la temp en sumaTemp
 		sumaTemp+=temp;
