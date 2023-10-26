@@ -22,8 +22,7 @@ public class PRG_22 {
 		
 		System.out.println("Introduce numero para terminar secuencia fibonachi");
 		f=entrada.nextInt();
-		System.out.println(n);//Empezaremos con n+m(1+1)
-		System.out.println(m);
+		
 		for(int contador=0;contador<f;contador++) {
 			
 			//sumamos m , n siendo 1 para empezar la secuencia tienen que ser 2 numeros iguales

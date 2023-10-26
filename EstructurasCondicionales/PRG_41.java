@@ -23,20 +23,23 @@ public class PRG_41 {
 		 
 		System.out.println("Introduce un numero");
 		n= entrada.nextInt();
-		System.out.println("primos de "+ n);
-		for(int i=n;i>0;i--) {
-			primo=true;
+		if(n<0) {
+			System.out.println("El numero tiene que ser positivo");
+		}else {
+			System.out.println("primos de "+ n);
+				for(int i=n;i>0;i--) {
+					primo=true;
 			
-			for(int j=2;i>j&&primo==true;j++) {
+					for(int j=2;i>j&&primo==true;j++) {
 				
-				if(i%j==0) 
-					primo=false;
-			}
-			if(primo)
+						if(i%j==0) 
+							primo=false;
+					}
+					if(primo)
 
-				System.out.println(i);
+						System.out.println(i);
 			
+				}
 			}
-		}
+			}
 	}
-
