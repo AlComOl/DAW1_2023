@@ -24,21 +24,22 @@ import java.util.*;
 	        System.out.println("Introduce un numero entero positivo:");
 	        n = entrada.nextInt();
 	        entrada.close();
+	        
 	        if (n <= 1) {//descarta valores negativos
 	            System.out.println("El número debe ser positivo o mayor de 1");
 	        } else {
 	            int cn = n;// Hacemos una copia de n para no modificar el original y poder trabajar con n
 	            
+	            System.out.print("Descomposicion factorial de  " +cn+" es ");
 	       while(cn!=1) {
-	    	   //for (int i = 2; cn > 1; i++) {//itera dentro de los diferentes numeros empezando por 2 while(cn!=1)**
+	    	   //for (int i = 2; cn > 1; i++) {**No sabemos las div que va hacer mejor while//itera dentro de los diferentes numeros empezando por 2 while(cn!=1)**
 	                while (cn % i == 0) {//verifica si i es factor primo
-	                	
-	                	 System.out.println(i+" es factor primo de "+n);
+	                	System.out.print(i+" ,");
+	                
 	                	  cn /= i;
-	                	  
-	                   
 	                }
-	              i++;
+	           
+	            i++;
 	        }
 	      }
 	   }

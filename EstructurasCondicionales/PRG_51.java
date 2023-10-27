@@ -31,7 +31,6 @@ public class PRG_51 {
 				m=entrada.nextInt();
 				
 				nc=n;
-				
 				mc=m;
 				
 				while(m>0) {

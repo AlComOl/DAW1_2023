@@ -8,7 +8,7 @@ Fecha:9/10/23
 Descripción:
 
 	Programa que recibe como datos de entrada dos números enteros positivos N y M, 
-	y calcula e imprime los múltiplos de N, inferiores a M, khv.
+	y calcula e imprime los múltiplos de N, inferiores a M.
 
 
 ***************************************************************************************/
