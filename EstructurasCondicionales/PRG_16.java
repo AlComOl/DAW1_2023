@@ -19,19 +19,13 @@ public class PRG_16 {
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
-		int aux=0;
+		int n,aux=0;
 		
-		System.out.println("Introduce 10 numeros");
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
-		aux+=entrada.nextInt();
+		for(int i=0;i<=10;i++) {
+			System.out.println("Introduce numero");
+		    n=entrada.nextInt();
+			
+		}
 		
 		System.out.println(aux);
 		
