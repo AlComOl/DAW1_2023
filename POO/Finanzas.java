@@ -3,7 +3,7 @@ import java.util.*;
 public class Finanzas {
 	
 //	ATRIBUTOS
-	private double cambio;
+	private double tipoCambio=1.35;
 	
 // CONSTRUCTOR
 	public Finanzas() {
@@ -11,32 +11,34 @@ public class Finanzas {
 	}
 	
 //	CONSTRUCTOR
-//	public Finanzas(double valor) {
-//		double cambio=valor;
-//	}
+	public Finanzas(double valor) {
+		double tipoCambio=valor;
+	}
 	
 //METODOS
-	
-	public double getCambio() {
-		return cambio;
-	}
 
-	public void setCambio(double cambio) {
-		this.cambio = cambio;
-	}
-
-	public double  dolaresToEuros(double dolares) {
+	public double  dolaresToEuros(double cantidad) {
 		
-		return dolares*cambio;
+		return cantidad*tipoCambio/1;
 		 	
 	}
 	
 	
 	
-	public void eurosToDolares( double euros) {
-		
+	public double eurosToDolares( double cantidad) {
+		return cantidad*1/tipoCambio;
 	}
 	
+	
+	
+//	METODOS GETTER Y SETTER
+	public double getTipoCambio() {
+		return tipoCambio;
+	}
+
+	public void setTipoCambio(double tipoCambio) {
+		this.tipoCambio = tipoCambio;
+	}
 
 
 	public static void main(String[] args) {
@@ -46,20 +48,49 @@ public class Finanzas {
 		
 		System.out.println("Introduce dinero a comvertir");
 		double cantidad=entrada.nextDouble();
-		System.out.println("Introduce el tipo de cambio");
-		double cambio=entrada.nextDouble();
+		System.out.println("Establece el tipo de cambio");
+		double tipoCambio=entrada.nextDouble();
+		alvaro.setTipoCambio(tipoCambio);
+		
+		System.out.println("Pulsa 1-De Dolar a Euro   \n\nPulsa 2-De Euro a Dolar");
+		int n=entrada.nextInt();
+		switch (n) {
+		case 1:
+//			System.out.println("¿Quieres introducir el tipo de cambio?Pulsa 1-Si \t  2-No");
+//			int n1=entrada.nextInt();
+//			switch (n1) {
+//			case 1:
+//				System.out.println("Establece el tipo de cambio");
+//				double tipoCambio=entrada.nextDouble();
+//				alvaro.setTipoCambio(tipoCambio);
+//				no entiendo porque con el metodo setter ya me saca el resultado al tipocambio que le indico
+			    System.out.println(alvaro.dolaresToEuros(cantidad)+" Euros");	
+//				
+//				break;
+//			case 2:
+//				System.out.println(alvaro.dolaresToEuros(cantidad));
+//				break;
+//			}
+			break;
+		case 2:
+			System.out.println(	alvaro.eurosToDolares(cantidad)+" Dolares");
+			break;
+
+		default:
+			System.out.println("Introduce la opcion Bien");
+			break;
+		}
 		
 		
 		
-//		alvaro.getCambio();
-		alvaro.setCambio(cambio);
-		System.out.println(alvaro.dolaresToEuros(cantidad));
-	
-	
-	
+
+//		System.out.println(alvaro.dolaresToEuros(cantidad));
+//		System.out.println(alvaro.eurosToDolares(cantidad));
+		
 
 	}
 
+	
 }
 
 
