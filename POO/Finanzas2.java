@@ -57,7 +57,6 @@ public class Finanzas2 {
 			}
 			break;
 		case 2:
-//			System.out.println("Cambio por defecto a 1.36");
 			System.out.println("El tipo de cambio esta a :"+Alvaro.getcambio());//Muestro el cambio que esta guardado en el 1ºconstructor
 			System.out.println("Pulsa \n 1-Si quieres convertir de Dolares a Euros \n 2-Si quieres convertir de Euros a Dolares");
 			int euros=entrada.nextInt();
