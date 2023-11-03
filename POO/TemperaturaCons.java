@@ -54,7 +54,7 @@ public class TemperaturaCons {
 		}else if(escala.equalsIgnoreCase("Celsius")){
 			System.out.println(alvaro.celsiusToFarenheit(temperatura)+ " Celsius");
 //		Si introduce otro valor le decimos que no esta configurado			
-		}else if(escala!="Celsius"&&escala!="Fahrenheit") {
+		}else if(escala!="Celsius"||escala!="Fahrenheit") {
 			System.out.println("No tenemos la funcion configurada todavia");
 		}
 		entrada.close();
