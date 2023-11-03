@@ -48,45 +48,37 @@ public class Finanzas {
 		
 		System.out.println("Introduce dinero a comvertir");
 		double cantidad=entrada.nextDouble();
-		System.out.println("Establece el tipo de cambio");
-		double tipoCambio=entrada.nextDouble();
-		alvaro.setTipoCambio(tipoCambio);
+		System.out.println("Quieres establecer el tipo de cambio \n 1-Si 2-No");
+		int tc=entrada.nextInt();
+		switch (tc) {
+		case 1:
+			System.out.println("Introduce tipo de cambio");
+			double tipoCambio=entrada.nextDouble();
+			alvaro.setTipoCambio(tipoCambio);
+			break;
+		case 2:
+			
+			break;
+
+		default:
+			System.out.println("Opcion incorrecta");
+			break;
+		}
 		
 		System.out.println("Pulsa 1-De Dolar a Euro   \n\nPulsa 2-De Euro a Dolar");
 		int n=entrada.nextInt();
 		switch (n) {
 		case 1:
-//			System.out.println("¿Quieres introducir el tipo de cambio?Pulsa 1-Si \t  2-No");
-//			int n1=entrada.nextInt();
-//			switch (n1) {
-//			case 1:
-//				System.out.println("Establece el tipo de cambio");
-//				double tipoCambio=entrada.nextDouble();
-//				alvaro.setTipoCambio(tipoCambio);
-//				no entiendo porque con el metodo setter ya me saca el resultado al tipocambio que le indico
-			    System.out.println(alvaro.dolaresToEuros(cantidad)+" Euros");	
-//				
-//				break;
-//			case 2:
-//				System.out.println(alvaro.dolaresToEuros(cantidad));
-//				break;
-//			}
+		    System.out.println(alvaro.dolaresToEuros(cantidad)+" Euros");	
 			break;
 		case 2:
 			System.out.println(	alvaro.eurosToDolares(cantidad)+" Dolares");
 			break;
 
 		default:
-			System.out.println("Introduce la opcion Bien");
+			System.out.println("Opcion incorrecta");
 			break;
 		}
-		
-		
-		
-
-//		System.out.println(alvaro.dolaresToEuros(cantidad));
-//		System.out.println(alvaro.eurosToDolares(cantidad));
-		
 
 	}
 
