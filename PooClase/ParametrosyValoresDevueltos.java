@@ -22,9 +22,9 @@ public class ParametrosyValoresDevueltos {
 	    return color;
 	}
 
-	public String getColorCadena() {
-		char color='a';
-	    String auxiliar = "";
+	public String getColorCadena(char color) {
+		 color= 'a';
+	    String auxiliar = color;///no puedo no se hacer funcionar
 	    switch(color) {
 	        case 'a':
 	            auxiliar = "Amarillo";

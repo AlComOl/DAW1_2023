@@ -1,5 +1,22 @@
 package POO;
 import java.util.*;
+/****************************************************************************************************************************
+
+Autor: Álvaro Comenge
+
+Fecha:04/11/23
+
+
+	Descripción:
+	
+ Realiza una clase Finanzas que convierta dólares a euros y viceversa. Codifica los métodos dolaresToEuros y eurosToDolares.
+ Prueba que dicha clase funciona correctamente haciendo conversiones entre euros y dólares. La clase tiene que tener:
+  • Un constructor Finanzas () por defecto, el cual establecerá el cambio Dólar-Euro en 1.36. 
+  • Un constructor Finanzas (double), el cual permitirá configurar el cambio dólar-euro.
+	
+	
+	
+***********************************************************************************************************************************/
 
 public class Finanzas2 {
 	//ATRIBUTOS
@@ -38,7 +55,7 @@ public class Finanzas2 {
 		
 		System.out.println("Introduce el valor a comvertir");
 		double cantidad=entrada.nextDouble();
-		
+			
 		System.out.println("Pulsa: \n 1-Si quieres establecer el tipo de cambio \n 2-Si quieres el cambio por defecto");
 		int eleccion=entrada.nextInt();
 		
@@ -53,11 +70,11 @@ public class Finanzas2 {
 			if(dolares==1) {
 			System.out.println(Alvaro.dolarToEuro(cantidad));//Muestra conversion del metodo
 			}else if(dolares==2) {
-			System.out.println(Alvaro.euroToDolar(cantidad));//Conversion del reves
+			System.out.println(Alvaro.euroToDolar(cantidad));
 			}
 			break;
 		case 2:
-			System.out.println("El tipo de cambio esta a :"+Alvaro.getcambio());//Muestro el cambio que esta guardado en el 1ºconstructor
+			System.out.println("El tipo de cambio esta a :"+Alvaro.getcambio());//Muestro el cambio que esta guardado en el 1ºconstructor por defecto
 			System.out.println("Pulsa \n 1-Si quieres convertir de Dolares a Euros \n 2-Si quieres convertir de Euros a Dolares");
 			int euros=entrada.nextInt();
 			
@@ -69,10 +86,11 @@ public class Finanzas2 {
 			break;
 
 		default:
+			System.out.println("La opcion que has elegido no esta configurada");
 			break;
 		}
-
-			
+			entrada.close();
+				
 			
 		}
 
