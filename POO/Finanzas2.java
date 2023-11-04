@@ -90,7 +90,7 @@ public class Finanzas2 {
 			break;
 		}
 			entrada.close();
-				
+		
 			
 		}
 
