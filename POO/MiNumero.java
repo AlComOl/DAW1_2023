@@ -25,12 +25,12 @@ public class MiNumero {
 	
 //CONSTRUCTOR
 	
-	public MiNumero(double valor) {
+	public MiNumero(double valor) {//proporcionamos el numero como parametro o argumento 
 		numero=valor;
 		
 	}
 	
-//METODOS
+//METODOS 
 	public double getDoble() {
 		
 		return numero*2;
@@ -54,7 +54,7 @@ public class MiNumero {
 		MiNumero Alvaro = new MiNumero(valor);
 		System.out.println("Pulsa: \n 1-Para aplicar el metodo Doble(Calculara el doble del numero)		\n 2-Para aplicar el metodo Triple(calculara el triple del numero)		\n 3-Para aplicar el metodo Cuatriple(calculara el cuatriple del numero) ");
 		int decision=entrada.nextInt();
-		switch (decision) {
+		switch (decision) {//aplicamos la funcion que necesitemos.
 		case 1:
 			System.out.println(	Alvaro.getDoble());
 			break;
@@ -69,11 +69,6 @@ public class MiNumero {
 			System.out.println("No exixte esa opcion todavia");
 			break;
 		}
-		
-		
-		
-		
-		
 
 	}
 
