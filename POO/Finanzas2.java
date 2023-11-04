@@ -63,43 +63,25 @@ public class Finanzas2 {
 		case 1:
 			System.out.println("Introduce cambio");
 			double valor=entrada.nextDouble();
-			Alvaro.setcambio(valor);//Establece el cambio del constructor sobrecargado
-//			System.out.println("Pulsa \n 1-Si quieres convertir de Dolares a Euros \n 2-Si quieres convertir de Euros a Dolares");
-//			int dolares=entrada.nextInt();
-//			
-//			if(dolares==1) {
-//			System.out.println(Alvaro.dolarToEuro(cantidad));//Muestra conversion del metodo
-//			}else if(dolares==2) {
-//			System.out.println(Alvaro.euroToDolar(cantidad));
-//			}
+			Alvaro.setcambio(valor);//Establece el cambio del constructor sobrecargado			
 			break;
 		case 2:
 			System.out.println("El tipo de cambio esta a :"+Alvaro.getcambio());//Muestro el cambio que esta guardado en el 1ºconstructor por defecto
-//			System.out.println("Pulsa \n 1-Si quieres convertir de Dolares a Euros \n 2-Si quieres convertir de Euros a Dolares");
-//			int euros=entrada.nextInt();
-//			
-//			if(euros==1) {
-//			System.out.println(Alvaro.dolarToEuro(cantidad));
-//			}else if(euros==2) {
-//			System.out.println(Alvaro.euroToDolar(cantidad));
-//			}
 			break;
-
 		default:
 			System.out.println("La opcion que has elegido no esta configurada");
 			break;
 		}
+		
 		System.out.println("Pulsa \n 1-Si quieres convertir de Dolares a Euros \n 2-Si quieres convertir de Euros a Dolares");
 		int dolares=entrada.nextInt();
 		
-		if(dolares==1) {
-		System.out.println(Alvaro.dolarToEuro(cantidad));//Muestra conversion del metodo
-		}else if(dolares==2) {
-		System.out.println(Alvaro.euroToDolar(cantidad));
-		}
-			entrada.close();
-		
-			
+			if(dolares==1) {
+				System.out.println(cantidad+" Dolares son "+Alvaro.dolarToEuro(cantidad)+" Euros");//Muestra conversion del metodo
+			}else if(dolares==2) {
+				System.out.println(cantidad+" Euros son "+Alvaro.euroToDolar(cantidad)+" Dolares");
+			}
+		entrada.close();
 		}
 
 	}
