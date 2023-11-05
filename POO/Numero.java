@@ -56,13 +56,13 @@ public class Numero {
 		Scanner entrada = new Scanner(System.in);
 		
 		Numero a1= new Numero();
-		System.out.println("Método aniade que permite sumarle un número al valor interno.");
+		System.out.println("Metodo aniade que permite sumarle un numero al valor interno.");
 		System.out.println(a1.sumarNumero(2));
-		System.out.println("Método aniade que permite restarle un número al valor interno.");
+		System.out.println("Metodo aniade que permite restarle un numero al valor interno.");
 		System.out.println(a1.restarNumero(2));
-		System.out.println("Método devuelve el doble del valor.");
+		System.out.println("Metodo devuelve el doble del valor.");
 		System.out.println(a1.getDoble());
-		System.out.println("Método devuelve el triple del valor.");
+		System.out.println("Metodo devuelve el triple del valor.");
 		System.out.println(a1.getTriple());
 		//Establecemos el valor internoa 3.
 		a1.setNumero(3);
