@@ -31,8 +31,9 @@ public class Numero {
 		public Numero() {
 			num=0;
 		}
+	//Constructor que inicializa el número interno.
 		public Numero(int valor) {
-			
+			num=valor;
 		}
 		
 		//Metodos
@@ -69,29 +70,71 @@ public class Numero {
 			return num*3;
 			
 		}
-		
-		public int setNumero(int valor) {
+		//Metodo que establece un nuevo valor		
+		public void setNumero(int valor) {
 			
-		return	num =valor;
+		num =valor;
 		}
 		
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		
+		byte e;
 		Numero a1= new Numero();
-		System.out.println("Metodo aniade que permite sumarle un numero al valor interno.");
-		System.out.println(a1.sumarNumero(2));
-		System.out.println("Metodo aniade que permite restarle un numero al valor interno.");
-		System.out.println(a1.restarNumero(2));
-		System.out.println("Metodo devuelve el doble del valor.");
-		System.out.println(a1.getDoble());
-		System.out.println("Metodo devuelve el triple del valor.");
-		System.out.println(a1.getTriple());
-		//Establecemos el valor internoa 3.
-		a1.setNumero(3);
-		System.out.println("Obtenemos el valor interno");
-		System.out.println(a1.getValor());
+		do {
+			
+		
+		System.out.println("\n 1-Aniade y Suma el numero introducido al valor interno. \n 2-Metodo aniade que permite restarle un numero al valor interno. \n 3-Metodo devuelve el doble del valor.  \n 4-Metodo devuelve el triple del valor. \n 5-Inicializa de nuevo el valor interno. \n 6-SALIR"  );
+		 e=entrada.nextByte();
+		switch (e) {
+		case 1:
+			System.out.println("Anaide numero y  sumar al valor interno");
+			int num=entrada.nextInt();
+			System.out.println(a1.sumarNumero(num));
+			break;
+		case 2:
+			System.out.println("Anaide numero y resta al valor interno ");
+			int num2=entrada.nextInt();
+			System.out.println(a1.restarNumero(num2));
+			break;
+		case 3:
+			System.out.println(a1.getDoble());
+			break;
+		case 4:
+			System.out.println(a1.getTriple());
+			break;
+		case 5:
+			System.out.println("Inicializa el valor interno");
+			int num3=entrada.nextInt();
+			a1.setNumero(num3);
+			break;
+			
+		default:
+//			System.out.println("Los valores no estan configuradon");
+			break;
+		}
+		
+		} while (e!=6);
+		
 	
+		
+//		System.out.println(a1.getValor());
+//		a1.setNumero(5);
+//		System.out.println(a1.getValor());
+//		System.out.println("Metodo aniade que permite sumarle un numero al valor interno.");
+//		System.out.println(a1.sumarNumero(2));
+//		System.out.println("Metodo aniade que permite restarle un numero al valor interno.");
+//		System.out.println(a1.restarNumero(2));
+//		System.out.println("Metodo devuelve el doble del valor.");
+//		System.out.println(a1.getDoble());
+//		System.out.println("Metodo devuelve el triple del valor.");
+//		System.out.println(a1.getTriple());
+//		//Establecemos el valor internoa 3.
+//		a1.setNumero(3);
+//		System.out.println("Obtenemos el valor interno");
+//		System.out.println(a1.getValor());
+//		
+//		System.out.println();
+//		
 	}
 
 }
