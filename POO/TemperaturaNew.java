@@ -1,8 +1,7 @@
 package POO;
 import java.util.*;
 /***************************************************************************
- *@author acome
- *
+
  	Autor: Álvaro Comenge
 
 	Fecha: 1/11/23
@@ -49,12 +48,8 @@ public class TemperaturaNew {
 		System.out.println("Introduce Escala");
 		tipo=entrada.next();
 		
-		
 		TemperaturaNew a1=new TemperaturaNew(cantidad,tipo);
 	
-	
-		
-
 		entrada.close();
 	}
 

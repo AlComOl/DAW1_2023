@@ -4,7 +4,7 @@ import java.util.*;
  
  	Autor: Álvaro Comenge
 
-	Fecha: 1/11/23
+	Fecha: 7/11/23
 	
 	Descripción:
 	
@@ -15,23 +15,36 @@ import java.util.*;
  ****************************************************************************************/
 public class Temperatura {
 	
+	//METODOS
+	public static float celsiusToFarenheit(float valor) {
+		
+		return (valor*9/5)+32;
+	}
+	
+	public static float farenheitToCelsius(float valor) {
+		return  (valor-32)*5/9;
+	}
+
+
+	
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
 		
-		Temperatura alvaro=new Temperatura();
+//		Temperatura alvaro=new Temperatura();
 		
 		System.out.println("Introduce tipo conversion \n 1-Celsius a Farenheit \n 2-Farenheit a Celsius");
 		int opcion=entrada.nextInt();
 		System.out.println("Introduce Temperatura");
-		float temperatura=entrada.nextFloat();
+		int temperatura=entrada.nextInt();
 		switch (opcion) {
 		case 1:
 			//LLamamos a la funcion y le pasamos la temperatura introducida por teclado
-			System.out.println(alvaro.celsiusToFarenheit(temperatura)+" Fahrenheit");
+			System.out.println(celsiusToFarenheit(temperatura)+" Fahrenheit"); 
+			
 			break;
 		case 2:
 
-			System.out.println(alvaro.farenheitToCelsius(temperatura)+" Celsius");
+			System.out.println(farenheitToCelsius(temperatura)+" Celsius");
 			break;
 
 		default:
@@ -40,20 +53,8 @@ public class Temperatura {
 		
 	entrada.close();	
 
-}
-	//CONSTRUCTOR QUE NO HACE NADA 
-	public Temperatura() {
-		
 	}
-		
-	//METODOS
-		public  float celsiusToFarenheit(float valor) {
-			
-			return (valor*9/5)+32;
-		}
-		
-		public float farenheitToCelsius(float valor) {
-			return  (valor-32)*5/9;
-		}
 
-	}
+}
+
+

@@ -31,6 +31,9 @@ public class Numero {
 		public Numero() {
 			num=0;
 		}
+		public Numero(int valor) {
+			
+		}
 		
 		//Metodos
 		//Permite sumar un numero al valor interno.
