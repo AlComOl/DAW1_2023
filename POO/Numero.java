@@ -114,27 +114,7 @@ public class Numero {
 		}
 		
 		} while (e!=6);
-		
-	
-		
-//		System.out.println(a1.getValor());
-//		a1.setNumero(5);
-//		System.out.println(a1.getValor());
-//		System.out.println("Metodo aniade que permite sumarle un numero al valor interno.");
-//		System.out.println(a1.sumarNumero(2));
-//		System.out.println("Metodo aniade que permite restarle un numero al valor interno.");
-//		System.out.println(a1.restarNumero(2));
-//		System.out.println("Metodo devuelve el doble del valor.");
-//		System.out.println(a1.getDoble());
-//		System.out.println("Metodo devuelve el triple del valor.");
-//		System.out.println(a1.getTriple());
-//		//Establecemos el valor internoa 3.
-//		a1.setNumero(3);
-//		System.out.println("Obtenemos el valor interno");
-//		System.out.println(a1.getValor());
-//		
-//		System.out.println();
-//		
+				
 	}
 
 }
