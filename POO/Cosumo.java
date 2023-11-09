@@ -26,6 +26,13 @@ public class Cosumo {
 	private double litrosConsumidos;
 	private double vMed;
 	private double pGas;
+//	Constructor Ejercicio siguiente
+	public Cosumo() {
+		kmsRecorridos=0;
+		litrosConsumidos=0;
+		vMed=0;
+		pGas=0;
+	}
 //	Constructor
 	public Cosumo(double kms,double litros, double vMed, double pGas) {
 		this.kmsRecorridos=kms;
@@ -44,14 +51,34 @@ public class Cosumo {
 		return (litrosConsumidos*100)/kmsRecorridos;
 		
 	}
-	public double consumoEuros() {
+	public double consumoEuros() { // Consumo medio del vehículo (en euros cada 100 kilómetros).
 		return ((litrosConsumidos*pGas)*100)/kmsRecorridos;
+	}
+	
+//	Para la clase anterior implementa los siguientes métodos, los cuales podrán modificar los valores 
+//	de los atributos de la clase: • setKms • setLitros • setVmed • setPgas
+	
+	public void setKms(double valor){
+		this.kmsRecorridos=valor;
+	}
+	public void setLitros(double valor) {
+		this.litrosConsumidos=valor;
+	}
+	public void setVmed(double valor) {
+		this.vMed=valor;
+	}
+	public void setPgas(double valor) {
+		this.pGas=valor;
 	}
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
 		
 		Cosumo consumoAudi = new Cosumo(100,20,100,1.70);
+		consumoAudi.setKms(50);
+		consumoAudi.setLitros(1);
+		consumoAudi.setVmed(130);
+		consumoAudi.setPgas(1.46);
 		
 		System.out.println(consumoAudi.getTiempo()+" horas");
 		System.out.println(consumoAudi.consumoMedio()+" l a los 100 kilometros");
