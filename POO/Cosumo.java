@@ -39,13 +39,13 @@ public class Cosumo {
 		return kmsRecorridos/vMed;
 		
 	}
-	public double consumoMedio() {
+	public double consumoMedio() {//Consumo medio del vehículo (en litros cada 100 kilómetros)
 		
-		return litrosConsumidos/100;
+		return (litrosConsumidos*100)/kmsRecorridos;
+		
 	}
 	public double consumoEuros() {
-		
-		return (kmsRecorridos*litrosConsumidos)/100;
+		return ((litrosConsumidos*pGas)*100)/kmsRecorridos;
 	}
 	public static void main(String[] args) {
 		
@@ -58,7 +58,7 @@ public class Cosumo {
 		System.out.println(consumoAudi.consumoEuros()+" Euros a los 100 Kilometros");
 		
 		
-
+		entrada.close();
 	}
 
 }
