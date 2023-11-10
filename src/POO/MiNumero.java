@@ -26,22 +26,22 @@ public class MiNumero {
 //CONSTRUCTOR
 	
 	public MiNumero(double valor) {//proporcionamos el numero como parametro o argumento 
-		numero=valor;
+		this.numero=valor;
 		
 	}
 	
 //METODOS 
 	public double getDoble() {
 		
-		return numero*2;
+		return this.numero*=2;
 	}
 	public double getTriple() {
 		
-		return numero*3;
+		return this.numero*=3;
 	}
 	public double getCuatriple() {
 		
-		return numero*4;
+		return this.numero*=4;
 	}
 
 	public static void main(String[] args) {

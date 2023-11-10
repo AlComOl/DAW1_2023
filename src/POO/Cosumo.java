@@ -26,19 +26,19 @@ public class Cosumo {
 	private double litrosConsumidos;
 	private double vMed;
 	private double pGas;
-//	Constructor Ejercicio siguiente
-	public Cosumo() {
-		kmsRecorridos=0;
-		litrosConsumidos=0;
-		vMed=0;
-		pGas=0;
-	}
+
 //	Constructor
 	public Cosumo(double kms,double litros, double vMed, double pGas) {
 		this.kmsRecorridos=kms;
 		this.litrosConsumidos=litros;
 		this.vMed=vMed;
 		this.pGas=pGas;
+	}
+	public Cosumo() {
+		kmsRecorridos=0;
+		litrosConsumidos=0;
+		vMed=0;
+		pGas=0;
 	}
 //	Metodos
 	public double getTiempo() {
@@ -57,6 +57,8 @@ public class Cosumo {
 	
 //	Para la clase anterior implementa los siguientes métodos, los cuales podrán modificar los valores 
 //	de los atributos de la clase: • setKms • setLitros • setVmed • setPgas
+//	Constructor Ejercicio siguiente
+//	Adjuntamos el constructor para pasar por parametro los valores de los metos
 	
 	public void setKms(double valor){
 		this.kmsRecorridos=valor;

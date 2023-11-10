@@ -1,4 +1,4 @@
-package src.EjerciciosClase.src;
+package EjerciciosClase.src;
 public class Prueba{
 	
 boolean puedeGrabar = false;

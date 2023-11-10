@@ -18,12 +18,12 @@ Descripción:
 public class ConversorDeMillas {
 	
 //Metodos
-	public double millasAMetros(double valor) { //Crea una clase con un método millasAMetros() V.entrada millas marinas V.salida metros
+	public static double millasAMetros(double valor) { //Crea una clase con un método millasAMetros() V.entrada millas marinas V.salida metros
 		
 		return 1852*valor;
 	}
 	
-	public double millasAKilometros(double valor) {//Metodo para pasar de millas a Kilometros V.entrada millas marinas V.salida Kilometros
+	public static double millasAKilometros(double valor) {//Metodo para pasar de millas a Kilometros V.entrada millas marinas V.salida Kilometros
 		
 		return (1852*valor)/1000;
 	}
@@ -31,7 +31,6 @@ public class ConversorDeMillas {
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in); 
 		
-		ConversorDeMillas e7=new ConversorDeMillas();
 		
 		System.out.println("\n 1-Convertir de millas a metros \n 2-Convertir de Millas a Kilometros");
 		int eleccion=0;
@@ -40,10 +39,10 @@ public class ConversorDeMillas {
 		double millas= entrada.nextDouble();
 		switch (eleccion) {
 		case 1:
-			System.out.println(e7.millasAMetros(millas)+" Metros");
+			System.out.println(millasAMetros(millas)+" Metros");
 			break;
 		case 2:
-			System.out.println(e7.millasAKilometros(millas)+" Kilometros");
+			System.out.println(millasAKilometros(millas)+" Kilometros");
 			break;
 
 		default:
