@@ -20,7 +20,7 @@ Descripción:
 
 ************************************************************************************************************************************************************************************************************************************************************************/
 public class Peso {
-	final double Lb
+	final double LB=0.453,LI=14.59,OZ=0.2835,P=0.00155,Q=43.3,G=1000;
 //	Atributos
 	
 	private double Kilogramo;
@@ -29,28 +29,28 @@ public class Peso {
 //	independientemente de la unidad en la que este y guardandomos en Kilogramos
 	private Peso(double peso, String medida) {
 		
-				Kilogramo=peso;
+				
 		//El condicional si es igual a la medida lo convierte a kilogramos guardandolo en el Atributo
 			if(medida.equalsIgnoreCase("Lb")) {
-				Kilogramo=peso*0.453;
+				Kilogramo=peso*LB;
 			}
 			if(medida.equalsIgnoreCase("Li")) {
-				Kilogramo=peso*14.59;
+				Kilogramo=peso*LI;
 			}
 			if(medida.equalsIgnoreCase("Oz")) {
-				Kilogramo=peso*0.2835;
+				Kilogramo=peso*OZ;
 			}
 			if(medida.equalsIgnoreCase("P")) {
-				Kilogramo=peso*0.00155;
+				Kilogramo=peso*P;
 			}
 			if(medida.equalsIgnoreCase("Q")) {
-				Kilogramo=peso*43.3;
+				Kilogramo=peso*Q;
 			}
 			if(medida.equalsIgnoreCase("K")) {
 				Kilogramo=peso;
 			}
 			if(medida.equalsIgnoreCase("G")) {
-				Kilogramo=peso/1000;
+				Kilogramo=peso/G;
 			}
 			
 	}

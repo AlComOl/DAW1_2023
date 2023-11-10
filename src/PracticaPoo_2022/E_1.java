@@ -15,23 +15,23 @@ public class E_1 {
 		Vehiculo maserati = new Vehiculo("as","600","G",23000,1975);
 		Vehiculo audi = new Vehiculo(maserati);
 		
-		System.out.println("Introduce valor");
+		System.out.println("Introduce maraca");
 		marca=entrada.next();
 		bmw.setMarca(marca);
 		
-		System.out.println("Introduce valor");
+		System.out.println("Introduce modelo");
 		modelo=entrada.next();
 		bmw.setModelo(modelo);
 		
-		System.out.println("Introduce valor");
+		System.out.println("Introduce color");
 		color=entrada.next();
 		bmw.setColor(color);
 		
-		System.out.println("Introduce valor");
+		System.out.println("Introduce precio de compra");
 		precioCompra=entrada.nextFloat();
 		bmw.setPrecioCompra(precioCompra);
 		
-		System.out.println("Introduce valor");
+		System.out.println("Introduce Año fabricacion");
 		anoFabric=entrada.nextInt();
 		bmw.setAnoFabric(anoFabric);
 		
