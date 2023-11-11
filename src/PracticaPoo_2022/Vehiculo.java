@@ -85,4 +85,42 @@ public class Vehiculo {
 		info=getMarca()+"\n"+getModelo()+"\n"+getColor()+"\n"+getPrecioCompra()+"\n"+getAnoFabric();
 		return info;
 	}
+	
+	public int anosVehiculo() {
+		return 2023-getAnoFabric();
+	}
+	
+	public float valorActual() {
+		float valor=0;
+		if(anosVehiculo()<=1) {
+		valor= precioCompra;
+		
+		}else if(anosVehiculo()<2) {
+			valor= getPrecioCompra()*84/100;
+		}else if(anosVehiculo()<3) {
+			valor= getPrecioCompra()*67/100;
+		}else if(anosVehiculo()<4) {
+			valor= getPrecioCompra()*56/100;
+		}else if(anosVehiculo()<5) {
+			valor= getPrecioCompra()*47/100;
+		}else if(anosVehiculo()<6) {
+			valor= getPrecioCompra()*39/100;
+		}else if(anosVehiculo()<7) {
+			valor= getPrecioCompra()*34/100;
+		}else if(anosVehiculo()<8) {
+			valor= getPrecioCompra()*28/100;
+		}else if(anosVehiculo()<9) {
+			valor= getPrecioCompra()*24/100;
+		}else if(anosVehiculo()<10) {
+			valor= getPrecioCompra()*19/100;
+		}else if(anosVehiculo()<11) {
+			valor= getPrecioCompra()*17/100;
+		}else if(anosVehiculo()<12) {
+			valor= getPrecioCompra()*13/100;
+		}else {
+			valor= getPrecioCompra()*10/100;
+		}
+		
+		return valor;
+	}
 }
