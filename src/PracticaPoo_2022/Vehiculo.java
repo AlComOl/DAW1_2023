@@ -148,7 +148,7 @@ public class Vehiculo {
 	}
 //	Añade otro método a la clase int relacion( Vehiculo v) que nos indique la antigüedad de un vehículo respecto al otro. Por ejemplo, si ejecutásemos
 	
-	public int relacion(Vehiculo v) {//pasomo el obgeto para que lo compare con 
+	public int relacion(Vehiculo v) {//pasomo el obgeto para que compara su año de fabricacion con el año de fabricacion del año de fabricacion que tenemos 
 		int antiguedad=0;
 		if(this.getAnoFabric()==v.anoFabric) {
 			antiguedad=0;
