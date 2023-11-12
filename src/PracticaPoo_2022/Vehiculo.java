@@ -18,6 +18,8 @@ public class Vehiculo {
 		  this.color=" ";
 		  this.precioCompra=0;
 		  this.anoFabric=0;
+		  generarMatricula();
+		 
 	}
 //	Constructor con argumentos
 	public Vehiculo(String marca,String modelo, String color,float precioCompra,int anoFabric) {
@@ -26,6 +28,9 @@ public class Vehiculo {
 		  this.color=color;
 		  this.precioCompra=precioCompra;
 		  this.anoFabric=anoFabric;
+		 
+		  
+		 
 	}
 //	Constructor de copia
 //	siempre que haga una intancia con constructor de copia los atributos seran del constructor del obgeto pasado por parametro en el constructor de copia
@@ -77,12 +82,12 @@ public class Vehiculo {
 	}
 //	void mostrar() método que muestra la información de un vehículo por pantalla.
 	public void mostrar() {
-		System.out.println(getMarca()+"\n"+getModelo()+"\n"+getColor()+"\n"+getPrecioCompra()+"\n"+getAnoFabric());
+		System.out.println("Marca:\n \n \t"+getMarca()+"\n \n" +" Modelo: \n \n \t"+getModelo()+"\n \n Color: \n \n \t"+getColor()+"\n \n Precio PVP \n \n \t"+getPrecioCompra()+"\n \n Ano Fabricacion \n \n \t"+getAnoFabric()+"\n \n  Matricula :\n \n \t"+generarMatricula());
 		
 	}
 	public String toString() {
 		String info;
-		info=getMarca()+"\n"+getModelo()+"\n"+getColor()+"\n"+getPrecioCompra()+"\n"+getAnoFabric();
+		info=getMarca()+"\n"+getModelo()+"\n"+getColor()+"\n"+getPrecioCompra()+"\n"+getAnoFabric()+"\n";
 		return info;
 	}
 	
@@ -122,5 +127,37 @@ public class Vehiculo {
 		}
 		
 		return valor;
+	}
+//	para matricula tenéis que crear un método privado que genere una cadena compuesta por un número de 3 cifras entre 000 y 999 y tres letras.
+	public  String generarMatricula() {
+		//generamos un nuevo obgeto de StringBuilder que 
+		StringBuilder matricula =new StringBuilder();
+		
+		for(int i=0;i<3;i++) {
+			char letras=(char)(Math.random()*26+'A');
+			matricula.append(letras);
+		}
+		
+		for(int i=0;i<3;i++) {
+			int numeros=(int)(Math.random()*10);
+			matricula.append(numeros);
+		}
+		
+		return matricula.toString();
+		
+	}
+//	Añade otro método a la clase int relacion( Vehiculo v) que nos indique la antigüedad de un vehículo respecto al otro. Por ejemplo, si ejecutásemos
+	
+	public int relacion(Vehiculo v) {//pasomo el obgeto para que lo compare con 
+		int antiguedad=0;
+		if(this.getAnoFabric()==v.anoFabric) {
+			antiguedad=0;
+		}else if(this.getAnoFabric()>v.anoFabric) {
+			antiguedad=1;
+		}else {
+			antiguedad=-1;
+		}
+			
+		return antiguedad;
 	}
 }
