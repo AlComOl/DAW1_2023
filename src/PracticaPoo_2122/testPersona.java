@@ -40,8 +40,11 @@ public class testPersona {
 		System.out.println("Constructor con argumentos");
 		p2.mostrar();
 		
+		
+		
+		
 	
-	System.out.println(p1.setRandomNif());
+	
 		
 		 
 	}
