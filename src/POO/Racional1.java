@@ -61,7 +61,7 @@ public class Racional1 {
 	public Racional1 suma(Racional1 r) {
 		
 		Racional1 r3=new Racional1();
-		
+//		el numerador es iguel al numerador introducido *el denominador pasado como argumento+ numerador pasado como argumento *el numerador introducido
 		r3.numerador=this.numerador*r.denominador+r.numerador*this.denominador;
 		r3.denominador= this.denominador*r.denominador;
 
@@ -166,7 +166,7 @@ public class Racional1 {
 				System.out.println(r3.getDenominador());
 				break;
 			case 5:
-				
+//				SALIR
 				break;
 
 			default:

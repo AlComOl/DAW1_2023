@@ -14,43 +14,44 @@ import java.util.*;
 
  **************************************************************************/
 
-public class TemperaturaNew {
-	//Atributos
-	private double temperatura;
-//	private String escala;
+//public class TemperaturaNew {
+//	//Atributos
+//	private double temperatura;
+////	private String escala;
+//	
+//	//CONSTRUCTOR
+//	public TemperaturaNew(double valor, String tipo) {
+//		if(tipo.equals("Celsius")) {
+//			System.out.println(((valor*9/5)+32)+" Farenheit");
+//		}else if(tipo.equals("Farenheit")) {
+//			System.err.println((farenheitToCelsius()+"Celsius"));
+//		}
+//		temperatura=valor;
+//
+//	}
+//	//METODOS
+//
+//	public double farenheitToCelsius() {
+//		
+//		return  (temperatura-32)*5/9; 
+//	}
+//	
+//	
+//	public static void main(String[] args) {
+//		Scanner entrada=new Scanner(System.in);
+//		int cantidad=0;
+//		String tipo="";
+//		
+//		
+//		System.out.println("Introduce Temperatura");
+//		cantidad=entrada.nextInt();
+//		System.out.println("Introduce Escala");
+//		tipo=entrada.next();
+//		
+//		TemperaturaNew a1=new TemperaturaNew(cantidad,tipo);
+//	
+//		entrada.close();
+//	}
 	
-	//CONSTRUCTOR
-	public TemperaturaNew(double valor, String tipo) {
-		if(tipo.equals("Celsius")) {
-			System.out.println(((valor*9/5)+32)+" Farenheit");
-		}else if(tipo.equals("Farenheit")) {
-			System.err.println((farenheitToCelsius()+"Celsius"));
-		}
-		temperatura=valor;
 
-	}
-	//METODOS
 
-	public double farenheitToCelsius() {
-		
-		return  (temperatura-32)*5/9; 
-	}
-	
-	
-	public static void main(String[] args) {
-		Scanner entrada=new Scanner(System.in);
-		int cantidad=0;
-		String tipo="";
-		
-		
-		System.out.println("Introduce Temperatura");
-		cantidad=entrada.nextInt();
-		System.out.println("Introduce Escala");
-		tipo=entrada.next();
-		
-		TemperaturaNew a1=new TemperaturaNew(cantidad,tipo);
-	
-		entrada.close();
-	}
-
-}
