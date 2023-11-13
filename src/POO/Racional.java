@@ -157,7 +157,7 @@ public class Racional {
 			break;
 		}
 		}while(opcion!=6);
-			
+
 	}
 
 }
