@@ -37,6 +37,12 @@ public class Racional1 {
 		this.denominador=denominador1;
 	}
 	
+//	Constructor de copia 
+	
+	public Racional1(Racional1 r) {
+		this.numerador=r.numerador;
+		this.denominador=r.denominador;
+	}
 
 	
 
@@ -130,19 +136,22 @@ public class Racional1 {
 		
 		int numerador1 = 0,numerador2=0,denominador2=0,denominador1=0;
 		byte decision=0;
-		Racional1 r1=new Racional1(0,0);
-		Racional1 r2=new Racional1(0,0);
+		Racional1 r1=new Racional1();
+		Racional1 r2=new Racional1();
 		Racional1 r3=new Racional1();
-//		Faltaria el menu para introducir numerador y denominador por teclado 
-		r1.setNumerador(2);
-		r1.setDenominador(3);
-		r2.setNumerador(2);
-		r2.setDenominador(3);
-	
-	
-		 
 		
-			System.out.println("Menu 1.Sumar Racionales \n 2.Restar Racionales \n 3.Multiplicar Racionales \n 4-Dividir Racionales \n 0.SALIR ");
+		System.out.println("Introduce numerador1 y denominador1");
+		numerador1=entrada.nextInt();
+		r1.setNumerador(numerador1);
+		denominador1=entrada.nextInt();
+		r1.setDenominador(denominador1);
+		System.out.println("Introduce numerador1 y denominador1");
+		numerador2=entrada.nextInt();
+		r2.setNumerador(numerador2);
+		denominador2=entrada.nextInt();
+		r2.setDenominador(denominador2);
+		
+			System.out.println("Menu \n 1.Sumar Racionales \n 2.Restar Racionales \n 3.Multiplicar Racionales \n 4-Dividir Racionales \n 0.SALIR ");
 				decision=entrada.nextByte();
 			switch (decision) {
 			case 1:

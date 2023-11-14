@@ -30,7 +30,7 @@ public class Temperatura {
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
 		
-//		Temperatura alvaro=new Temperatura();
+
 		
 		System.out.println("Introduce tipo conversion \n 1-Celsius a Farenheit \n 2-Farenheit a Celsius");
 		int opcion=entrada.nextInt();

@@ -14,7 +14,7 @@ import java.util.*;
 
  **************************************************************************/
 
-//public class TemperaturaNew {
+public class TemperaturaNew {
 //	//Atributos
 //	private double temperatura;
 ////	private String escala;
@@ -51,7 +51,38 @@ import java.util.*;
 //		TemperaturaNew a1=new TemperaturaNew(cantidad,tipo);
 //	
 //		entrada.close();
-//	}
+	 private double temperatura;
+
+	   public TemperaturaNew(double var1, String var3) {
+	      if (var3.equals("Celsius")) {
+	         System.out.println(var1* 9.0 / 5.0 + 32.0);
+	      } else if (var3.equals("Farenheit")) {
+	         System.out.println(this.farenheitToCelsius() + "Celsius");
+	      }
+
+	      this.temperatura = var1;
+	   }
+
+	   public double farenheitToCelsius() {
+	      return (this.temperatura - 32.0) * 5.0 / 9.0;
+	   }
+//	   public double celsiusToFarenheit() {
+//		   return this.temperatura * 9.0 / 5.0 + 32.0;
+//	   }
+
+	   public static void main(String[] var0) {
+	      Scanner entrada = new Scanner(System.in);
+	     
+	      String var3 = "";
+	      System.out.println("Introduce Temperatura");
+	      int var1 = entrada.nextInt();
+	      System.out.println("Introduce Escala");
+	      var3 = entrada.next();
+	      new TemperaturaNew((double)var1, var3);
+	      entrada.close();
+	   }
+	}
+	
 	
 
 
