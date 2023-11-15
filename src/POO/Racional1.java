@@ -25,7 +25,7 @@ public class Racional1 {
 	private int  denominador;
 //Constructor por defecto , lo necesitamos para cuando metamos sumar los valores en r3
 	public  Racional1(){
-		numerador=1;
+		numerador=0;
 		denominador=1;
 		
 	}
@@ -72,8 +72,16 @@ public class Racional1 {
 		r3.denominador= this.denominador*r.denominador;
 
 		r3.simplificar();
+		r3.mostrar(r3);
 		
 		return r3;
+	}
+	
+	
+//funcion mostrar para mostrar el contenido de los getters (numerador y denominador) 	
+	public void mostrar(Racional1 r3) {
+		
+		System.out.println(r3.getNumerador()+"/"+r3.getDenominador());
 	}
 //	Funcion para restar obgetos
 	public Racional1 resta(Racional1 r) {
@@ -83,17 +91,21 @@ public class Racional1 {
 		r3.numerador=this.numerador*r.denominador-this.denominador*r.numerador;
 		r3.denominador=this.denominador*r.denominador;
 		
-		
+		r3.simplificar();
+		r3.mostrar(r3);
 		
 		return r3;
 	 }
-	 
+//	 funcion que multiplica obgetos
 	 public Racional1 multiplicacion(Racional1 r) {
 		 
 		 Racional1 r3= new Racional1();
 		 
 		 r3.numerador=this.numerador*r.numerador;
 		 r3.denominador=this.denominador*r.denominador;
+		 
+		 r3.simplificar();
+		 	r3.mostrar(r3);
 		 
 		 return r3;
 	 }
@@ -137,27 +149,30 @@ public class Racional1 {
 		int numerador1 = 0,numerador2=0,denominador2=0,denominador1=0;
 		byte decision=0;
 		Racional1 r1=new Racional1();
-		Racional1 r2=new Racional1();
+		Racional1 r2=new Racional1(numerador2,denominador2);
 		Racional1 r3=new Racional1();
+		Racional1 r4=new Racional1(r3);
+		
+		r4.getNumerador();
 		
 		System.out.println("Introduce numerador1 y denominador1");
 		numerador1=entrada.nextInt();
 		r1.setNumerador(numerador1);
 		denominador1=entrada.nextInt();
 		r1.setDenominador(denominador1);
-		System.out.println("Introduce numerador1 y denominador1");
+		System.out.println("Introduce numerador2 y denominador");
 		numerador2=entrada.nextInt();
-		r2.setNumerador(numerador2);
 		denominador2=entrada.nextInt();
-		r2.setDenominador(denominador2);
+	
+	
+		
 		
 			System.out.println("Menu \n 1.Sumar Racionales \n 2.Restar Racionales \n 3.Multiplicar Racionales \n 4-Dividir Racionales \n 0.SALIR ");
 				decision=entrada.nextByte();
 			switch (decision) {
 			case 1:
 			   r3=r1.suma(r2);
-			   	System.out.println(r3.getNumerador());
-				System.out.println(r3.getDenominador());
+			   
 				break;
 			case 2:
 				r3=r1.resta(r2);

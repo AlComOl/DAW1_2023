@@ -54,21 +54,22 @@ public class TemperaturaNew {
 	 private double temperatura;
 
 	   public TemperaturaNew(double var1, String var3) {
+		   this.temperatura = var1;
 	      if (var3.equals("Celsius")) {
-	         System.out.println(var1* 9.0 / 5.0 + 32.0);
+	         System.out.println(this.celsiusToFarenheit()+"farenheit");
 	      } else if (var3.equals("Farenheit")) {
 	         System.out.println(this.farenheitToCelsius() + "Celsius");
 	      }
 
-	      this.temperatura = var1;
+	    
 	   }
 
 	   public double farenheitToCelsius() {
 	      return (this.temperatura - 32.0) * 5.0 / 9.0;
 	   }
-//	   public double celsiusToFarenheit() {
-//		   return this.temperatura * 9.0 / 5.0 + 32.0;
-//	   }
+	   public double celsiusToFarenheit() {
+		   return this.temperatura * 9.0 / 5.0 + 32.0;
+	   }
 
 	   public static void main(String[] var0) {
 	      Scanner entrada = new Scanner(System.in);

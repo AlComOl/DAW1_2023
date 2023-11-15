@@ -1,4 +1,25 @@
 package POO;
+/****************************************************************************************************************************
+
+Autor: Álvaro Comenge
+
+Fecha:11/11/23
+
+
+Descripción:
+	
+Modifica el programa anterior creando una clase que permita almacenar los kilos de papas y chocos del restaurante. 
+Implementa los siguientes métodos:
+ • public void addChocos(int x): Añade x kilos de chocos a los ya existentes.
+ • public void addPapas(int x): Añade x kilos de papas a los ya existentes. 
+ • public int getComensales(): Devuelve el número de clientes que puede atender el restaurante (este es el método anterior).
+ • public void showChocos(): Muestra por pantalla los kilos de chocos que hay en el almacen.
+ • public void showPapas(): Muestra por pantalla los kilos de papas que hay en el almacen. 	
+
+
+
+***********************************************************************************************************************************/
+
 
 public class RestauranteMjecano2 {
 	//Atributos
