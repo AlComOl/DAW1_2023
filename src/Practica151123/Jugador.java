@@ -24,9 +24,8 @@ public class Jugador {
 	}
 	
 //	constructor sobrecargado
-	public Jugador(String valor,String valor1,String valor2,int valor3,int valor4,int valor5,int valor6,int valor7) {
+	public Jugador(String valor,String valor2,int valor3,int valor4,int valor5,int valor6,int valor7) {
 		this.nombre=valor;
-		this.nif= " ";
 		this.sexo=valor2;
 		this.puntos=valor3;
 		this.rebotes=valor4;
@@ -68,7 +67,11 @@ public class Jugador {
 	}
 
 	public void setSexo(String sexo) {
+		if(sexo!="H"||sexo!="M") {
+			this.sexo="D";
+		}else {
 		this.sexo = sexo;
+		}
 	}
 
 	public int getPuntos() {
@@ -111,20 +114,21 @@ public class Jugador {
 		this.robosdebalon = robosdebalon;
 	}
 //	metodo void mostrar
-//	Se entendera que dodbledoble son menos de 3 y tripetriple seran mas de 10
-	 public void mostrar(){
-	        System.out.println("El dini de la persona es "+"Dodble  "+dobleDoble()+"  TripleTriple "+tripleTriple()+ "El DNI "+ generarDni());
-	    } 
+
 	
+	  public String mostrar(){
+		  
+			return "El din de la persona es " + generarDni() +" El nombre de la persona "+getNombre()+"   El sexo de la persona es "+getSexo()+"   El judador sera DOBLEDOBLE: "+dobleDoble()+"   El Juagador seara TripleTriple :"+tripleTriple();
+//	        System.out.println("El din de la persona es " + generarDni() +" El nombre de la persona "+getNombre()+"   El sexo de la persona es "+getSexo()+"   El judador sera DOBLEDOBLE: "+dobleDoble()+"   El Juagador seara TripleTriple :"+tripleTriple());
+	    } 
 //	metodo generar dni
 	  public String generarDni() {
           final int A=1111111111 , B=999999999;
         	  
-          int numeroAleatorio = (int) (Math.random()*(A-B +1)*B);
+          int numeroAleatorio = (int) (Math. random()*(A-B +1)*B);
           
           int resultado=(int)numeroAleatorio%23;
-          String letra="";
-          
+        
          switch (resultado) {
          	case 1:
 			System.out.println(numeroAleatorio+"T");
@@ -191,13 +195,14 @@ public class Jugador {
     		break;
             
 		default:
+			System.out.println("No se puede generar");
 			break;
 		}
           
 		return nif;
           }
           
-         
+	
       
   
 	  
@@ -249,7 +254,7 @@ public class Jugador {
 			  			contador++;
 			  		}
 			  		
-			  		if(contador>=2) {
+			  		if(contador>=3) {
 			  			valor=true;
 		  }
 		  return valor;

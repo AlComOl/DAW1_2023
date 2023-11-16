@@ -6,7 +6,7 @@ public class TestJugador {
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
 		byte opcion;
-		String nombre,nif;
+		String nombre;
 		String sexo;
 		int puntos,rebotes,asistencias,tapones,robosdebalon;
 		
@@ -24,9 +24,6 @@ public class TestJugador {
 			System.out.println("Introduce nombre");
 			nombre=entrada.next();
 			j1.setNombre(nombre);
-			System.out.println("Introduce nif se genera ");
-//			nif=entrada.next();
-//			j1.setNif(nif);
 			System.out.println("Introduce sexo");
 			sexo=entrada.next();
 			j1.setSexo(sexo);
@@ -48,7 +45,7 @@ public class TestJugador {
 			
 			j1.mostrar();
 			
-			j1.generarDni();
+		
 			
 //			me falta poner poner el constructor de copia que compararia con otra funcion que no he puesto los 3 jugadores
 			

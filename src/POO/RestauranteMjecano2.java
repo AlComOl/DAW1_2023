@@ -48,7 +48,7 @@ public class RestauranteMjecano2 {
 		int	personasPapas= (int)(papas/3);	
 		int personasChoco= (int)(chocos/0.5);
 
-		return"Con la cantidad  de chocos introducida el restaurante puede ateneder a "+ personasChoco +"personas "+"\n y con la cantidad de papas introducida "+personasPapas;
+		return"Con la cantidad  de chocos introducida el restaurante puede ateneder a "+ personasChoco +" personas "+"\n y con la cantidad de papas introducida "+personasPapas;
 		 
 		}
 	public void showChocos() {//public void showChocos(): Muestra por pantalla los kilos de chocos que hay en el almacen. 
@@ -65,30 +65,30 @@ public class RestauranteMjecano2 {
 		
 		RestauranteMjecano2 r2= new RestauranteMjecano2();
 	
-	System.out.println(r2.getKchocos());
-	System.out.println(r2.getKpapas());
-	r2.setKchocos(20);
-	r2.setKpapas(10);
-	System.out.println(r2.getKchocos());
-	System.out.println(r2.getKpapas());
-	
-	
-	
-	System.out.println(r2.getKchocos());
-	System.out.println(r2.getKpapas());
+//	System.out.println(r2.getKchocos());
+//	System.out.println(r2.getKpapas());
+//	r2.setKchocos(20);
+//	r2.setKpapas(10);
+//	System.out.println(r2.getKchocos());
+//	System.out.println(r2.getKpapas());
+//	
+//	
+//	
+//	System.out.println(r2.getKchocos());
+//	System.out.println(r2.getKpapas());
 	
 	System.out.println("*****************************************");
 	
-	r2.showChocos();
-	r2.showPapas();
-	r2.setKchocos(10);
-	r2.setKpapas(10);
-	r2.showChocos();
-	r2.showPapas();
-	System.out.println(	r2.getComensales(30, 10));
+//	r2.showChocos();
+//	r2.showPapas();
+//	r2.setKchocos(10);
+//	r2.setKpapas(10);
+//	r2.showChocos();
+//	r2.showPapas();
+	System.out.println(r2.getComensales(10, 10));
 	
-	r2.showChocos();
-	r2.showPapas();
+//	r2.showChocos();
+//	r2.showPapas();
 	
 	
 			
