@@ -45,7 +45,7 @@ public class TestJugador {
 			
 			j1.mostrar();
 			
-		
+			
 			
 //			me falta poner poner el constructor de copia que compararia con otra funcion que no he puesto los 3 jugadores
 			

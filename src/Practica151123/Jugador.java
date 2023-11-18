@@ -14,7 +14,7 @@ public class Jugador {
 	
 	public Jugador() {
 		this.nombre=" ";
-		this.nif="";
+		setNif(generarDni());
 		this.sexo="H";
 		this.puntos=0;
 		this.rebotes=0;
@@ -32,6 +32,7 @@ public class Jugador {
 		this.asistencias=valor5;
 		this.tapones=valor6;
 		this.robosdebalon=valor7;
+		generarDni();
 	}
 //	constructor de copia 
 	public Jugador(Jugador j) {
@@ -116,10 +117,10 @@ public class Jugador {
 //	metodo void mostrar
 
 	
-	  public String mostrar(){
+	  public void mostrar(){
 		  
-			return "El din de la persona es " + generarDni() +" El nombre de la persona "+getNombre()+"   El sexo de la persona es "+getSexo()+"   El judador sera DOBLEDOBLE: "+dobleDoble()+"   El Juagador seara TripleTriple :"+tripleTriple();
-//	        System.out.println("El din de la persona es " + generarDni() +" El nombre de la persona "+getNombre()+"   El sexo de la persona es "+getSexo()+"   El judador sera DOBLEDOBLE: "+dobleDoble()+"   El Juagador seara TripleTriple :"+tripleTriple());
+//			return "El din de la persona es " + generarDni() +" El nombre de la persona "+getNombre()+"   El sexo de la persona es "+getSexo()+"   El judador sera DOBLEDOBLE: "+dobleDoble()+"   El Juagador seara TripleTriple :"+tripleTriple();
+	        System.out.println("El din de la persona es " + getNif() +" El nombre de la persona "+getNombre()+"   El sexo de la persona es "+getSexo()+"   El judador sera DOBLEDOBLE: "+dobleDoble()+"   El Juagador seara TripleTriple :"+tripleTriple());
 	    } 
 //	metodo generar dni
 	  public String generarDni() {

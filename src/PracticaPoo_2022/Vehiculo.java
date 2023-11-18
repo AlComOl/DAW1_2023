@@ -129,7 +129,7 @@ public class Vehiculo {
 		return valor;
 	}
 //	para matricula tenéis que crear un método privado que genere una cadena compuesta por un número de 3 cifras entre 000 y 999 y tres letras.
-	public  String generarMatricula() {
+	public  String generarMatricula() {//este metodo no es el que tenemos que utilizar
 		//generamos un nuevo obgeto de StringBuilder que 
 		StringBuilder matricula =new StringBuilder();
 		

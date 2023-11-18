@@ -25,17 +25,28 @@ public class Racional {
 	
 	
 	public Racional() {
-		numerador=1;
+		numerador=0;
 		denominador=1;
 	}
 	
 //	Constructor con argumentos
 	
 	public Racional(int numerador, int denominador){
-		
 		this.numerador=numerador;
-		this.denominador=denominador;
+		if(denominador !=0) {
+			this.denominador=denominador;
+		}else {
+			numerador=0;
+			denominador=1;
+		}
+//		this.denominador=denominador;
 		
+	}
+//	constructor copia 
+	
+	public Racional(Racional r) {
+		this.numerador=r.numerador;
+		this.denominador=r.denominador;
 	}
 //	Metodos getters y setters
 
@@ -61,9 +72,9 @@ public class Racional {
 	public void  sumaRacionales(int numerador2,int denominador2) {
 		this.numerador=this.numerador*denominador2+numerador2*this.denominador;
 		this.denominador*=denominador2;
-	
-		System.out.println(this.numerador+"/"+this.denominador);
 		System.out.println(simplificar());
+//		System.out.println(this.numerador+"/"+this.denominador);
+		
 	}
 //	Metodo para restar racionales
 	public void restarRacionales(int numerador2,int denominador2){
