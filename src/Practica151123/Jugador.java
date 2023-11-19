@@ -14,7 +14,7 @@ public class Jugador {
 	
 	public Jugador() {
 		this.nombre=" ";
-		setNif(generarDni());
+		this.generarDni();
 		this.sexo="H";
 		this.puntos=0;
 		this.rebotes=0;
@@ -23,7 +23,7 @@ public class Jugador {
 		this.robosdebalon=0;
 	}
 	
-//	constructor sobrecargado
+//	constructor parametrizado 
 	public Jugador(String valor,String valor2,int valor3,int valor4,int valor5,int valor6,int valor7) {
 		this.nombre=valor;
 		this.sexo=valor2;
@@ -123,7 +123,7 @@ public class Jugador {
 	        System.out.println("El din de la persona es " + getNif() +" El nombre de la persona "+getNombre()+"   El sexo de la persona es "+getSexo()+"   El judador sera DOBLEDOBLE: "+dobleDoble()+"   El Juagador seara TripleTriple :"+tripleTriple());
 	    } 
 //	metodo generar dni
-	  public String generarDni() {
+	  public void generarDni() {
           final int A=1111111111 , B=999999999;
         	  
           int numeroAleatorio = (int) (Math. random()*(A-B +1)*B);
@@ -132,67 +132,67 @@ public class Jugador {
         
          switch (resultado) {
          	case 1:
-			System.out.println(numeroAleatorio+"T");
+			this.nif=numeroAleatorio+"T";
 			break;
          	case 2:
-         	System.out.println(numeroAleatorio+"R");
+         	this.nif=numeroAleatorio+"R";
 			break;
          	case 3:
-         		System.out.println(numeroAleatorio+"W");
+         	this.nif=numeroAleatorio+"W";
 			break;
          	case 4:
-         		System.out.println(numeroAleatorio+"A");
+         	this.nif=numeroAleatorio+"A";
 			break;
          	case 5:
-         		System.out.println(numeroAleatorio+"G");
+         	this.nif= numeroAleatorio+"G";
 			break;
          	case 6:
-         		System.out.println(numeroAleatorio+"M");
+         	this.nif=numeroAleatorio+"M";
 			break;
          	case 7:
-         		System.out.println(numeroAleatorio+"Y");
+         	this.nif=numeroAleatorio+"Y";
 			break;
          	case 8:
-         		System.out.println(numeroAleatorio+"F");
+         	this.nif=numeroAleatorio+"F";
 			break;
          	case 9:
-         		System.out.println(numeroAleatorio+"P");
+         	this.nif=numeroAleatorio+"P";
 			break;
          	case 10:
-         		System.out.println(numeroAleatorio+"D");
+         	this.nif=numeroAleatorio+"D";
 			break;
          	case 12:
-         		System.out.println(numeroAleatorio+"X");
+         	this.nif=numeroAleatorio+"X";
 			break;
          	case 13:
-         		System.out.println(numeroAleatorio+"B");
+         	this.nif=numeroAleatorio+"B";
     		break;
             case 14:
-            	System.out.println(numeroAleatorio+"N");
+            this.nif=numeroAleatorio+"N";
     		break;
             case 15:
-            	System.out.println(numeroAleatorio+"J");
+            this.nif=numeroAleatorio+"J";
     		break;
             case 16:
-            	System.out.println(numeroAleatorio+"J");
+            this.nif=numeroAleatorio+"J";
     	    break;
             case 17:
-            	System.out.println(numeroAleatorio+"Z");
+            this.nif=numeroAleatorio+"Z";
     	    break;
             case 18:
-            	System.out.println(numeroAleatorio+"S");
+            this.nif=numeroAleatorio+"S";
     	    break;
             case 19:
-            	System.out.println(numeroAleatorio+"Q");
+            this.nif=numeroAleatorio+"Q";
     		break;
             case 20:
-            	System.out.println(numeroAleatorio+"V");
+            this.nif=numeroAleatorio+"V";
     		break;
              case 21:
-            	 System.out.println(numeroAleatorio+"H");
+            this.nif=numeroAleatorio+"H";
     		break;
             case 22:
-            	System.out.println(numeroAleatorio+"L");
+            this.nif=numeroAleatorio+"L";
     		break;
             
 		default:
@@ -200,7 +200,6 @@ public class Jugador {
 			break;
 		}
           
-		return nif;
           }
           
 	

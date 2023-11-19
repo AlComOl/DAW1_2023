@@ -36,7 +36,7 @@ public class horoscopoChino {
 		case 11:
 			System.out.println("CABRA");
 			break;
-		case 12:
+		case 0:
 			System.out.println("MONO");
 			break;
 		case 1:

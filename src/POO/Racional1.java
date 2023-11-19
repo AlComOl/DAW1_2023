@@ -104,7 +104,7 @@ public class Racional1 {
 		 r3.numerador=this.numerador*r.numerador;
 		 r3.denominador=this.denominador*r.denominador;
 		 
-		 r3.simplificar();
+		 	r3.simplificar();
 		 	r3.mostrar(r3);
 		 
 		 return r3;
@@ -153,16 +153,20 @@ public class Racional1 {
 		Racional1 r3=new Racional1();
 		Racional1 r4=new Racional1(r3);
 		
-		r4.getNumerador();
+		do {
+			
+		
 		
 		System.out.println("Introduce numerador1 y denominador1");
 		numerador1=entrada.nextInt();
 		r1.setNumerador(numerador1);
 		denominador1=entrada.nextInt();
 		r1.setDenominador(denominador1);
-		System.out.println("Introduce numerador2 y denominador");
+		System.out.println("Introduce numerador2 y denominador2");
 		numerador2=entrada.nextInt();
+		r2.setNumerador(numerador2);
 		denominador2=entrada.nextInt();
+		r2.setDenominador(denominador2);
 	
 	
 		
@@ -172,31 +176,26 @@ public class Racional1 {
 			switch (decision) {
 			case 1:
 			   r3=r1.suma(r2);
-			   
+			   	
 				break;
 			case 2:
 				r3=r1.resta(r2);
-				System.out.println(r3.getNumerador());
-				System.out.println(r3.getDenominador());
 				break;
 			case 3:
 				r3=r1.multiplicacion(r2);
-				System.out.println(r3.getNumerador());
-				System.out.println(r3.getDenominador());
 				break;
 			case 4:
 				r3=r1.division(r2);
-				System.out.println(r3.getNumerador());
-				System.out.println(r3.getDenominador());
 				break;
 			case 5:
 //				SALIR
 				break;
 
 			default:
+				System.out.println("La opcion no esta configurada");
 				break;
 			}
 
-		
+		} while (decision!=5);
 }
 }

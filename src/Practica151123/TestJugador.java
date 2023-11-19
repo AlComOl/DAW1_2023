@@ -13,6 +13,7 @@ public class TestJugador {
 		
 		Jugador j1= new Jugador();
 		Jugador j2= new Jugador();
+		j1.mostrar();
 		
 	do {
 		System.out.println("\n 1-Crea un nuevo jugador(Introduce datos) \n 2-Salir");
@@ -43,7 +44,7 @@ public class TestJugador {
 			robosdebalon=entrada.nextInt();
 			j1.setRobosdebalon(robosdebalon);
 			
-			j1.mostrar();
+			
 			
 			
 			

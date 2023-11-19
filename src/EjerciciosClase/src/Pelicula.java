@@ -10,7 +10,7 @@ public class Pelicula {
 	private int codGenero;
 //	Constructor por defecto
 	public Pelicula() {
-		codPelicula= 1;
+		codPelicula=generacodPel();
 		titulo=" ";
 		director=" ";
 		anoProduccion=0;
@@ -28,7 +28,7 @@ public class Pelicula {
 	}
 //	Contructor de copia 
 	public Pelicula(Pelicula p) {
-		this.codPelicula=p.codPelicula;
+		this.codPelicula=p.codPelicula+1;
 		this.titulo=p.titulo;
 		this.director=p.director;
 		this.anoProduccion=p.anoProduccion;
@@ -76,9 +76,11 @@ public class Pelicula {
 	}
 //	generar codigo
 	
-	public void codPelicula() {
+	public int  generacodPel() {
 		this.codPelicula=codPelicula+1;
+		return this.codPelicula;
 	}
+	
 	
 //	mostrar
 	
@@ -86,23 +88,31 @@ public class Pelicula {
 		
 		System.out.println("El codigo de la pelicula es "+getCodPelicula()+"El titulo "+getTitulo()+" su director "+getDirector()+" el año de produccion "+getAnoProduccion()+" el codigo del genero es "+getCodGenero());
 	}
+//comparar
 	
-//	toString
-//	public String toString() {
-//		
-//		return ;
+	public int comparar(Pelicula p, Pelicula pe ) {
+		int info;
+		if(p.anoProduccion>pe.anoProduccion) {
+		 info=p.anoProduccion;
+		}else {
+			info=pe.anoProduccion;
+		}
+		return info;
+	}
 		
-	
+
 	public static void main (String []args) {
 		Scanner entrada=new Scanner(System.in);
 		int cp, ap,g;
-		String t,director;
+		String t,d;
 		
 		Pelicula p1= new Pelicula();
 		
 		Pelicula p2= new Pelicula(12, "Los inmortales","Andres Rueda",1945, 34);
 		
 		Pelicula p3= new Pelicula(p1);
+		
+	
 		
 		int opcion;
 		do {
@@ -114,18 +124,21 @@ public class Pelicula {
 			case 1:
 				System.out.println("Introduce el codigo pelicula");
 				cp=entrada.nextInt();
+				entrada.nextLine();
 				p1.setCodPelicula(cp);
 				System.out.println("Introduce el titulo");
-				t=entrada.next();
+				t=entrada.nextLine();
 				p1.setTitulo(t);
 				System.out.println("Introduce el director");
-				director=entrada.nextLine();
-				p1.setDirector(director);
+				d=entrada.nextLine();
+				p1.setDirector(d);
 				System.out.println("Introduce el ano producion");
 				ap=entrada.nextInt();
+				entrada.nextLine();
 				p1.setAnoProduccion(ap);
 				System.out.println("Introduce genero");
 				g=entrada.nextInt();
+				entrada.nextLine();
 				p1.setCodGenero(g);
 				
 				break;
@@ -133,13 +146,12 @@ public class Pelicula {
 				p1.mostrar();
 				p2.mostrar();
 				p3.mostrar();
+				
 				break;
 			case 3:
-	
+			System.out.println(	p1.comparar(p1, p2));
 				break;
-			case 4:
-	
-				break;			
+						
 
 			default:
 				break;
