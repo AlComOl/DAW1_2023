@@ -12,11 +12,12 @@ public class TestJugador {
 		
 		
 		Jugador j1= new Jugador();
-		Jugador j2= new Jugador();
-		j1.mostrar();
+		Jugador j2= new Jugador("Juan","22569695W","H",2,3,5,6,7);
+		Jugador j3= new Jugador(j2);
+		
 		
 	do {
-		System.out.println("\n 1-Crea un nuevo jugador(Introduce datos) \n 2-Salir");
+		System.out.println("\n 1-Crea un nuevo jugador(Introduce datos)\n 2-Mostrar jugadores  \n 3-Salir");
 		opcion=entrada.nextByte();
 		
 		switch (opcion) {
@@ -30,35 +31,35 @@ public class TestJugador {
 			j1.setSexo(sexo);
 			System.out.println("Introduce puntos");
 			puntos=entrada.nextInt();
+			entrada.nextLine();
 			j1.setPuntos(puntos);
 			System.out.println("Introduce rebotes");
 			rebotes=entrada.nextInt();
+			entrada.nextLine();
 			j1.setRebotes(rebotes);
 			System.out.println("Introduce asistencias");
 			asistencias=entrada.nextInt();
-			j1.setRebotes(asistencias);
+			entrada.nextLine();
+			j1.setAsistencias(asistencias);
 			System.out.println("Introduce tapones");
 			tapones=entrada.nextInt();
+			entrada.nextLine();
 			j1.setTapones(tapones);
 			System.out.println("Introduce robos de balon");
 			robosdebalon=entrada.nextInt();
+			entrada.nextLine();
 			j1.setRobosdebalon(robosdebalon);
-			
-			
-			
-			
-			
-//			me falta poner poner el constructor de copia que compararia con otra funcion que no he puesto los 3 jugadores
-			
 			break;
 		case 2:
-			
+			j1.mostrar();
+			j2.mostrar();
+			j3.mostrar();
 			break;
 		
 		default:
 			break;
 		}
-	} while (opcion!=2);
+	} while (opcion!=3);
 	}
 
 }

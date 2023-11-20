@@ -15,7 +15,7 @@ public class Jugador {
 	public Jugador() {
 		this.nombre=" ";
 		this.generarDni();
-		this.sexo="H";
+		this.sexo="N";
 		this.puntos=0;
 		this.rebotes=0;
 		this.asistencias=0;
@@ -24,19 +24,21 @@ public class Jugador {
 	}
 	
 //	constructor parametrizado 
-	public Jugador(String valor,String valor2,int valor3,int valor4,int valor5,int valor6,int valor7) {
+	public Jugador(String valor,String valor1,String valor2,int  valor3,int valor4,int valor5,int valor6,int valor7) {
 		this.nombre=valor;
-		this.sexo=valor2;
+		this.nif=valor1;
+		this.sexo=valor2;;
 		this.puntos=valor3;
 		this.rebotes=valor4;
 		this.asistencias=valor5;
 		this.tapones=valor6;
 		this.robosdebalon=valor7;
-		generarDni();
+		
 	}
 //	constructor de copia 
 	public Jugador(Jugador j) {
 		this.nombre=j.nombre;
+		this.nif=j.nif;
 		this.sexo=j.sexo;
 		this.puntos=j.puntos;
 		this.rebotes=j.rebotes;
@@ -66,10 +68,10 @@ public class Jugador {
 	public String getSexo() {
 		return sexo;
 	}
-
+//en el setter ponermos esta dondicion para que establezca N en caso de que no sea ni H ni M
 	public void setSexo(String sexo) {
 		if(sexo!="H"||sexo!="M") {
-			this.sexo="D";
+			this.sexo="N";
 		}else {
 		this.sexo = sexo;
 		}
@@ -128,7 +130,7 @@ public class Jugador {
         	  
           int numeroAleatorio = (int) (Math. random()*(A-B +1)*B);
           
-          int resultado=(int)numeroAleatorio%23;
+          int resultado=numeroAleatorio%23;
         
          switch (resultado) {
          	case 1:
