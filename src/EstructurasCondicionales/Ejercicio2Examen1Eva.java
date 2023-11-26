@@ -7,23 +7,23 @@ public class Ejercicio2Examen1Eva {
 	public static void main(String[] args)throws IOException {
 		Scanner entrada=new Scanner(System.in);
 
-//		int a=entrada.nextInt();
-//		
-//		if(a!=2) {
-//			System.out.println("b");
-//		}
-//		switch (a/3+1) {
-//		case 3:
-//			System.out.println("a");
-//			break;
-//		case 5:
-//			break;
-//		default:
-//		case 0:
-//			System.out.println("d");
-//		case 1:
-//			System.out.println("e");
-//			break;
+		int a=entrada.nextInt();
+		
+		if(a<4) {
+			System.out.println("b");
+		}
+		switch (a*2+1) {
+		case 3:
+			System.out.println("a");
+			break;
+		case 5:
+			break;
+		default:
+		case 7:
+			System.out.println("d");
+		case 1:
+			System.out.println("e");
+			break;
 		
 ////	Ejercicio 2
 //	
@@ -57,29 +57,29 @@ public class Ejercicio2Examen1Eva {
 //		Ejercicio 6
 		
 		
-		int digito,digito1,compara=0,aux=0;
-		boolean divisor=false;
-		System.out.println("Introduce el numero");	
-		int n=entrada.nextInt();
-
-			while(n>0) {
-				digito=n%10;
-				n/=10;
-				aux+=digito;
-				
-		}
-			
-			while(aux>0) {
-				digito1=aux%10;
-				aux/=10;
-				compara+=digito1;
-			}
-			if(compara ==9) {
-				divisor=true;
-				System.out.println(divisor);
-			}else {
-				System.out.println(divisor);
-			}
+//		int digito,digito1,compara=0,aux=0;
+//		boolean divisor=false;
+//		System.out.println("Introduce el numero");	
+//		int n=entrada.nextInt();
+//
+//			while(n>0) {
+//				digito=n%10;
+//				n/=10;
+//				aux+=digito;
+//				
+//		}
+//			
+//			while(aux>0) {
+//				digito1=aux%10;
+//				aux/=10;
+//				compara+=digito1;
+//			}
+//			if(compara ==9) {
+//				divisor=true;
+//				System.out.println(divisor);
+//			}else {
+//				System.out.println(divisor);
+//			}
 			
 			
 			
@@ -87,5 +87,6 @@ public class Ejercicio2Examen1Eva {
 		
 		
 	}	
+	}
 }
 

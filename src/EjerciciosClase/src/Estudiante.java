@@ -99,7 +99,7 @@ public class Estudiante {
 		String n,carnet,carrera, param1="", param3="",param4="";
 		Estudiante e1=new Estudiante();
 		Estudiante e2=new Estudiante(param1,param2,param3,param4,param5);
-		Estudiante e3=new Estudiante(e2);
+		Estudiante e3=new Estudiante();
 		
 		do {
 			System.out.println(" \n 1-Modificar estudiante \n 2-Mostrar estudiantes \n 3-Estudiantes con Sobresaliente");
@@ -134,23 +134,26 @@ public class Estudiante {
 				 
 				 System.out.println("Carnet Estudiante");
 				 param3=entrada.nextLine();
-				 param3=entrada.nextLine();
+//				 entrada.nextLine();
 				
 				 System.out.println("Carrera que eligio");
 				 param4=entrada.nextLine();
-				 param4=entrada.nextLine();
-				 System.out.println("Nota media");
-				 param5=entrada.nextInt();
+//				5
+				 
+//				 System.out.println("Nota media");
+//				 param5=entrada.nextInt();
 				 
 				 e2=new Estudiante(param1,param2,param3,param4,param5);
+				 e3=new Estudiante(e2);
 				break;
 			case 2:
 			System.out.println(	e1.mostrar());
+			
 			System.out.println(	e2.mostrar());
 			System.out.println(	e3.mostrar());
 				break;
 			case 3:
-		System.out.println(	e1.esEstudianteSobresaliente(e3));
+		System.out.println(	e1.esEstudianteSobresaliente(e2));
 				break;
 
 			default:
