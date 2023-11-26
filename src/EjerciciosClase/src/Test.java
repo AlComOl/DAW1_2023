@@ -1,27 +1,36 @@
 package EjerciciosClase.src;
 
 public class Test {
-	int x,y;
-	
-	Test(int a,int b){
-		x=a;
-		y=b;
-	}
-	
-	
+
 	public static void main(String[] args) {
 		
-		Test t1=new Test(2,5);
+//	int n;
+//	
+//	for(n=4;n<3;n+=3)
+//		
+//		System.out.println("s");
+//	int j=0;
+//	while(j==1) 
+//		System.out.println("s")
+
+//		int t=1;
+//		while(t>=1) {
+//			t--;
+//			if(t==1) 
+//				t=0;
+//			else 
+//				t=1;
+//			System.out.println("s");
+//			}
 		
-		
-		Test t2=t1;
-		
-//		t1.x=t2.y;
-		
-		System.out.println(t2.x);
-		System.out.println(t2.y);
+		int i=1;
+		System.out.println(++i);//preIncremento incremeta i
+		System.out.println(i++);//postIncremento Incremeta despues
+		System.out.println(i);
 		
 		}
+		
+	
 	}
 
 
