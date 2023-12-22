@@ -29,7 +29,7 @@ Ejemplo:
 
 
 ***********************************************************************************************************************************/
-public class refuerzo2_2 {
+public class refuerzo1_12 {
 
 	public static void main(String[] args) {
 		Scanner entrada=new Scanner(System.in);
