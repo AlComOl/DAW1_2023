@@ -30,7 +30,7 @@ public class refuerzo2_1 {
 		
 		saluda();
 		double euros =pideEuros();
-	System.out.println(convierteAPesetas(euros));
+		System.out.println(convierteAPesetas(euros));
 		despide();
 		
 	
