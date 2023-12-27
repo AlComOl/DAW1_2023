@@ -15,7 +15,6 @@ public class refuerzo2_2 {
 		System.out.println("Dime una palabra");
 		String palabra;	
 		palabra=sc.nextLine();
-		
 		return palabra;
 		
 		}
@@ -24,10 +23,7 @@ public class refuerzo2_2 {
 		int repeticion;
 		System.out.println("Cuantas veces la repito");
 		repeticion=sc.nextInt();
-		if(Character.isDigit(repeticion)) {
-			System.out.println("No has introducido un numero valido");
 		
-		}
 		return repeticion;
 	}
 		
