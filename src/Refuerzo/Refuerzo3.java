@@ -33,8 +33,10 @@ public class Refuerzo3 {
 		
 //		ejercicio 7
 		
-		ejercicio3_7();
+//		ejercicio3_7();
 		
+//	    ejercicio8 
+		ejercicio3_8();
 		
 //		
 	}
@@ -138,10 +140,20 @@ public class Refuerzo3 {
 		 n/=10;
 		 System.out.println("-> "+acumula);
 	 }
-
 		
-		
-		
+	}
+	public static void ejercicio3_8() {
+		int n,aux;
+		System.out.println("Invierte");
+		 n=sc.nextInt();
+		 System.out.print("-> ");
+		while(n>0) {
+			aux=0;
+			aux=n%10;
+			System.out.print(aux);
+			n/=10;
+			
+		}
 		
 		
 	}
