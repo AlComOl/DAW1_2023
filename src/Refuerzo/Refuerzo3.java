@@ -26,9 +26,17 @@ public class Refuerzo3 {
 //		ejercicio3_4();
 //		ejercicio5
 		
-		System.out.println("Introduce el numero");
-		int numero=sc.nextInt();
-		ejercicio3_5(numero);
+//		System.out.println("Introduce el numero");
+//		int numero=sc.nextInt();
+//		ejercicio3_5(numero);
+		
+		
+//		ejercicio 7
+		
+		ejercicio3_7();
+		
+		
+//		
 	}
 	
 
@@ -115,7 +123,34 @@ public class Refuerzo3 {
 		 }
 		 System.out.println(acumula);
 	 }	
+	
+	
+	
+	public static void ejercicio3_7() {
+		int aux,n,acumula=0;
+		
+		System.out.println("Introduce un numero");
+		 n=sc.nextInt();
+	 
+		while(n>10) {
+		 aux=n%10;
+		 acumula+=aux;
+		 n/=10;
+		 System.out.println("-> "+acumula);
+	 }
+
+		
+		
+		
+		
 		
 	}
+ 
+}	
+	
+
+
+
+
 	
 
